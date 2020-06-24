@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index3</title>
+</head>
+<body>
+	<link rel="stylesheet" href="styles.css">
+	<div class = "container-fluid" id = "header">
+		<header>
+    <div class="nav-bar">
+		<nav class="navbar navbar-expand-lg">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+				<i class="fas fa-bars" style="color: white"></i>
+			</button>
+			<div class="logo-brand">
+				<a href="/">
+					<img src="https://techmaster.vn/resources/image/new_logo.png" alt="logo">
+				</a>
+			</div>
+
+			<div class="user-nav mobile">
+				
+				<div class="user-dropdown-avatar" onclick="ShowUserMenu(this)" data-dropdown="dropdown-user-menu-mobile">
+					<img src="https://techmaster.vn/resources/image/anonymous-user.jpg" onerror="this.onerror=null;this.src='/resources/image/anonymous-user.jpg';" alt="Avatar" class="navbar-user-avatar-img">
+				</div>
+				<ul class="dropdown-menu" id="dropdown-user-menu-mobile" style="margin-right: 15px">
+					<li class="admin-page" onclick="GoToAdminSite()"><span>Trang quản trị</span></li>
+					<li class="teacher-page" onclick="GoToTeacherSite()"><span>Trang giảng viên</span></li>
+					<li class="choose-active-order"><span>Kích hoạt đơn hàng</span></li>
+					<li class="choose-user-classes"><span>Lớp học của tôi</span></li>
+					<li class="choose-user-profile"><span>Hồ sơ cá nhân</span></li>
+					<li class="choose-sign-out"><span>Đăng xuất</span></li>
+				</ul>
+				
+			</div>
+			<div class="btn mobile shopping-cart-mobile" style="display:none">
+				<a href="/gio-hang" style="color: white">
+					<div style="position: relative; line-height: 75px">
+						<i class="fas fa-shopping-cart"></i>
+						<span class="count-cart-item count-cart-item-mobile">0</span>
+					</div>
+				</a>
+			</div>
+			<div class="parent-menu desktop">
+				<ul class="list-menu">
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/khoa-hoc/truc-tuyen">
+						<a href="/khoa-hoc/truc-tuyen" class="nav-padding">
+							<span>Trực tuyến</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/khoa-hoc/phong-lab">
+						<a href="/khoa-hoc/phong-lab" class="nav-padding">
+							<span>Phòng lab</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="ShowSubMenu(this)" data-dropdown="submenu-dropdown-2">
+						<a class="nav-padding">
+							<span>Lộ trình <i class="fas fa-caret-down"></i></span>
+						</a>
+						
+						<ul class="dropdown-menu" id="submenu-dropdown-2">
+							
+							<a href="/lo-trinh">
+								<li><span>Thực tập 9 tháng</span></li>
+							</a>
+							
+							<a href="/lo-trinh/foundation">
+								<li><span>Nền tảng lập trình</span></li>
+							</a>
+							
+							<a href="/lo-trinh/front-end">
+								<li><span>Front End + React</span></li>
+							</a>
+							
+							<a href="/lo-trinh/mobile">
+								<li><span>Di động React Native</span></li>
+							</a>
+							
+							<a href="/lo-trinh/java-fullstack">
+								<li><span>Java Spring Boot FullStack</span></li>
+							</a>
+							
+						</ul>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/san-pham-hoc-vien">
+						<a href="/san-pham-hoc-vien" class="nav-padding">
+							<span>Sản phẩm học viên</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/trungtam/lich-khai-giang">
+						<a href="/trungtam/lich-khai-giang" class="nav-padding">
+							<span>Khai giảng</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/posts">
+						<a href="/posts" class="nav-padding">
+							<span>Blog</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/trai-nghiem">
+						<a href="/trai-nghiem" class="nav-padding">
+							<span>Trải nghiệm</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/viec-lam">
+						<a href="/viec-lam" class="nav-padding">
+							<span>Việc làm</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="ShowSubMenu(this)" data-dropdown="submenu-dropdown-8">
+						<a class="nav-padding">
+							<span>Chúng tôi <i class="fas fa-caret-down"></i></span>
+						</a>
+						
+						<ul class="dropdown-menu" id="submenu-dropdown-8">
+							
+							<a href="/trungtam/trung-tam">
+								<li><span>Trung tâm</span></li>
+							</a>
+							
+							<a href="/trungtam/quy-dinh-chung">
+								<li><span>Quy định chung</span></li>
+							</a>
+							
+							<a href="/trungtam/giang-vien">
+								<li><span>Giảng viên</span></li>
+							</a>
+							
+							<a href="/trungtam/huong-dan-mua-khoa-hoc">
+								<li><span>Hướng dẫn đăng ký học</span></li>
+							</a>
+							
+						</ul>
+						
+					</li>
+					
+					
+					<li class="parent-menu-item">
+						<div style="position: relative;">
+							<a href="/gio-hang">
+								<i class="fas fa-shopping-cart shopping-cart-top-menu"> </i>
+							</a>
+							<span class="badge badge-success count-cart-item">0</span>
+						</div>
+						
+						<div class="user-dropdown-avatar" onclick="ShowUserMenu(this)" data-dropdown="dropdown-user-menu">
+							<img src="https://techmaster.vn/resources/image/anonymous-user.jpg" onerror="this.onerror=null;this.src='/resources/image/anonymous-user.jpg';" alt="Avatar" class="navbar-user-avatar-img">
+						</div>
+						<ul class="dropdown-menu" id="dropdown-user-menu">
+							<li class="admin-page" onclick="GoToAdminSite()"><span>Trang quản trị</span></li>
+							<li class="teacher-page" onclick="GoToTeacherSite()"><span>Trang giảng viên</span></li>
+							<li class="choose-active-order"><span>Kích hoạt đơn hàng</span></li>
+							<li class="choose-user-classes"><span>Lớp học của tôi</span></li>
+							<li class="choose-user-profile"><span>Hồ sơ cá nhân</span></li>
+							<li class="choose-sign-out"><span>Đăng xuất</span></li>
+						</ul>
+						
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+</header>
+</body>
+</html>
