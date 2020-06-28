@@ -43,16 +43,51 @@
         margin-right: 7.5%;
     }
 
-    div.desc {
-        padding: 15px;
-        text-align: center;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
     }
 
+    li {
+        float: left;
+        width: 25%;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+    }
+
+    li a:hover:not(.active) {
+        background-color: black;
+        color: #ce3635;
+    }
+
+    .active {
+        background-color: #ce3635;
+    }
 </style>
 
 <body>
-    <img src = "image/murakami.png" alt = "logo" class="center">
-    <hr style="height:3px;border-width:0;color:gray;background-color:black; margin-top:35px; margin-bottom:30px">
+    <img src = "image/murakami.png" alt = "logo" class="center" style = "margin-top: 50px">
+    <!-- <hr style="height:3px;border-width:0;color:gray;background-color:black; margin-top:35px; margin-bottom:30px"> -->
+
+    <ul style = "margin-top: 50px; margin-bottom: 30px; padding-left: 25%; padding-right: 25%; align-content: center;">
+        <li><a class="active" href="">Trang chủ</a></li>
+        <li><a href="">Mua Sách</a></li>
+        <li><a href="">Về Tác Giả</a></li>
+        <li><a href="">Liên hệ</a></li>
+      </ul>
 
     <div class = "marg">
         <div class="gallery">
