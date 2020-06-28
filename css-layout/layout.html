@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .column1 {
+        width: 400px;
+        height: 400px;
+        background-color: red;
+        float: left;
+        margin: 0;
+    }
+
+    .white{
+        width: 15px;
+        height: 400px;
+        background-color: white;
+        float: left;
+        margin: 0;   
+    }
+    .spacer {
+        width: 1000px;
+        height: 400px;
+        background-color: white;
+        margin: 0;
+    }
+    
+    span.c {
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+
+    .desc {
+        font-size: 16px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        color: white;
+        margin: 0;
+    }
+
+    .spacer{
+        margin-bottom: 100px;
+    }
+
+    .column3{
+        width: 200px;
+        height: 400px;
+        float: left;
+        margin: 0;  
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+
+<body>
+    <div>
+        <div class="column1">
+            <p class="desc" style="line-height: 400px;"> Height: 400px </p>
+        </div>
+        <div style="float: left">
+            <span class="c" style="background-color: blue;">
+                <p class="desc" style="line-height: 200px;"> Height: 200px</p>
+            </span>
+            <span class="c" style="background-color: green;">
+                <p class="desc" style="line-height: 200px;"> Height: 200px</p>
+            </span>
+        </div>
+    </div>
+
+    <div>
+        <div class="spacer">
+            <!-- <p class="desc" style="line-height: 400px;"> Height: 400px </p> -->
+        </div>
+        <div class="column1">
+            <p class="desc" style="line-height: 400px;"> Height: 400px </p>
+        </div>
+        <div class="white">
+        </div>
+        <div style="float: left">
+            <span class="c" style="background-color: blue;">
+                <p class="desc" style="line-height: 200px;"> Height: 200px</p>
+            </span>
+            <span class="c" style="background-color: green;">
+                <p class="desc" style="line-height: 200px;"> Height: 200px</p>
+            </span>
+        </div>
+    </div>
+
+    <div>
+        <div class="spacer">
+            <!-- <p class="desc" style="line-height: 400px;"> Height: 400px </p> -->
+        </div>
+        <div class="column3" style = "background-color: red;">
+            <p class="desc" style="line-height: 400px;"> Height: 400px </p>
+        </div>
+        <div class="column3" style = "background-color: blue;">
+            <p class="desc" style="line-height: 400px;"> Height: 400px </p>
+        </div>
+        <div class="column3" style = "background-color: green;">
+            <p class="desc" style="line-height: 400px;"> Height: 400px </p>
+        </div>
+    
+    </div>
+
+    <div>
+        <div class="spacer">
+            <!-- <p class="desc" style="line-height: 400px;"> Height: 400px </p> -->
+        </div>
+        <div class="column3" style = "background-color: red;">
+            <p class="desc" style="line-height: 400px;"> Height: 400px </p>
+        </div>
+        <div class="white">
+        </div>
+        <div class="column3" style = "background-color: blue;">
+            <p class="desc" style="line-height: 400px;"> Height: 400px </p>
+        </div>
+        <div class="white">
+        </div>
+        <div class="column3" style = "background-color: green;">
+            <p class="desc" style="line-height: 400px;"> Height: 400px </p>
+        </div>
+    
+    </div>
+</body>
+
+</html>
