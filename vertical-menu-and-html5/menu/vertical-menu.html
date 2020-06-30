@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Menu</title>
+</head>
+
+<style>
+    .menu {
+        width: 150px;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .menu a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .menu a:hover:not(.active) {
+        background-color: black;
+        color: #ce3635;
+    }
+
+    .active {
+        background-color: #ce3635;
+    }
+
+    .text {
+        margin-left: calc(150px + 5%);
+        margin-right: 6.5%;
+        font-size: 25px;
+        padding: 0px 10px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 1.6em;
+
+    }
+
+    .icon {
+        width: 50px;
+        height: auto;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+</style>
+
+<script>
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<body>
+    <div class="menu">
+        <a class="active" href="">Trang chủ</a>
+        <a href="">Mua Sách</a>
+        <a href="">Về Tác Giả</a>
+        <a href="">Liên hệ</a>
+    </div>
+        <img onclick="topFunction()" class="icon" src="../image/up.png" alt="scroll_icon">
+    <div class="text">
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+
+        </p>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+
+        </p>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+
+        </p>
+    </div>
+</body>
+
+</html>
