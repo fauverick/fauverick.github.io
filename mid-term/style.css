@@ -1,64 +1,70 @@
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 25%;
-    }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
 
-    div.gallery {
-        margin-left: 17.5%;
-        margin-right: 17.5%;
-        margin-top: 2%;
-    }
+div.gallery {
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    margin-top: 2%;
+}
 
-    div.image {
-        width: calc(33.3333% - 30px);
-        float: left;
-        box-sizing: border-box;
-        margin: 10px 15px 10px 15px;     
-    }
+div.image {
+    width: calc(33.3333% - 30px);
+    float: left;
+    box-sizing: border-box;
+    margin: 10px 15px 10px 15px;     
+}
 
-    div.gallery img {
-        width: 100%;
-        transition: 0.8s;
+div.gallery img {
+    width: 100%;
+    transition: 0.8s;
 
-    }
+}
 
-    div.gallery img:hover{
-        filter:brightness(80%);
-    }
+div.gallery img:hover{
+    filter:brightness(80%);
+}
 
-    .caption{
-        margin: 12.5px 0px 12.5px 0px;
-        padding-top: 6.5px;
-        padding-bottom: 6.5px;
-        text-align: center;
-        text-decoration: none;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        letter-spacing: 0.4px;
-        color: black;
-        font-size: 20px;
-        transition: 0s;
-    }
+.caption{
+    margin: 12.5px 0px 12.5px 0px;
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.4px;
+    color: black;
+    font-size: 20px;
+    transition: 0s;
+}
 
-    .caption:hover{
-        color: #072132;
-        margin: 12.5px 0px 12.5px 0px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border: 1.5px solid #e9e0e0;
-    }
+.caption:hover{
+    color: #072132;
+    margin: 12.5px 0px 12.5px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1.5px solid #e9e0e0;
+}
 
-    a {
-        text-decoration: none;
-    }
+a {
+    text-decoration: none;
+}
 
-    .title{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        color: #d32521;
-        text-align: center;
-    }
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #d32521;
+    text-align: center;
+}
 
-  
+.footer{
+    margin-top: 900px;
+    width: 200%;
+    height: 150px;
+    background-color: #072132;
+}
+
 
