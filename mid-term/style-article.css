@@ -25,6 +25,7 @@ div.gallery {
     padding: 0px 0px 0px 38px;
     border-left: 1.5px solid #e9e0e0;
     margin-bottom: 200px;
+    /* margin-left: 45%; */
 }
 
 img{
@@ -68,8 +69,9 @@ img{
 }
 
 .large{
-    /* position: fixed;
-    width: 45%; */
+   /* position: fixed;
+   width: 25%; */
+  
 }
 
 .footer{
