@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Philosopher;
+    /* src: url('/Users/HP/Documents/font/Philosopher/Philosopher-Regular.ttf') format('ttf'); */
+    /* src: local('/fonts/Philosopher/Philosopher-Regular.ttf') format('ttf'); */
+    src: local('Philosopher-Regular.ttf') format('ttf');
+
+
+}
+
+/* ------------------ Header ------------------ */
+
+.header{
+    display: block;
+}
+
+.logo-center{
+    width: 27.5%;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu{
+    position: relative;
+    text-align: center;
+    background: #ffffff;
+}
+
+.nav-bar_item{
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.nav-bar_content{
+    /* transition: 0.5s; */
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Philosopher;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-bar_content:hover{
+    color: #d32521;
+}
+
+/* ------------------ Spotlight ------------------ */
+
+.spotlight{
+    box-sizing: border-box;
+}
+
+.spotlight_container{
+    max-width: 1200px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.spotlight_container_row{
+    width: 100%;
+}
+
+.spotlight_col{
+    height: 100%;
+    position: relative;
+    float: left;
+    display: flex;
+}
+
+.spotlight_col_wrap{
+    width: 100%;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #E9E0E0;
+    /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+    margin: 10px 0px 0px 0px;
+    padding: 0% 10% 0% 0%;
+}
+
+.spotlight_news1{
+    width: 100%;
+}
+
+.link{
+    text-decoration: none;
+}
+.spotlight_news1 > a >.thumbnail{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.spotlight_news1 > a > .genre{
+    /* transition: 0.5s; */
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family:Philosopher;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .05em;
+    margin-bottom: 5px;
+}
+.spotlight_news1 > a > .caption{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .05em;
+    margin-bottom: 5px;
+
+}
+
+
+
