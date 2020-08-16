@@ -1,20 +1,39 @@
 @font-face {
     font-family: Philosopher;
-    /* src: url('/Users/HP/Documents/font/Philosopher/Philosopher-Regular.ttf') format('ttf'); */
-    /* src: local('/fonts/Philosopher/Philosopher-Regular.ttf') format('ttf'); */
-    src: local('Philosopher-Regular.ttf') format('ttf');
-
-
+    src: local('Philosopher-Regular.ttf') format('ttf'),
+         local('Philosopher-Bold.ttf') format('ttf'),
+         local('Philosopher-Bolditalic.ttf') format('ttf'),
+         local('Philosopher-Italic.ttf') format('ttf');
 }
 
+@font-face {
+    font-family: Cormorant;   
+    src: local('Cormorant-Bold.ttf') format('ttf'),
+         local('Cormorant-BoldItalic.ttf') format('ttf'),
+         local('Cormorant-Italic.ttf') format('ttf'),
+         local('Cormorant-Light.ttf') format('ttf'),
+         local('Cormorant-LightItalic.ttf') format('ttf'),
+         local('Cormorant-Medium.ttf') format('ttf'),
+         local('Cormorant-MediumItalic.ttf') format('ttf'),
+         local('Cormorant-Regular.ttf') format('ttf'),
+         local('Cormorant-SemiBold.ttf') format('ttf'),
+         local('Cormorant-SemiBoldItalic.ttf') format('ttf');
+}
+body{
+    display: block;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
 /* ------------------ Header ------------------ */
 
 .header{
     display: block;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .logo-center{
-    width: 27.5%;
+    width: 29%;
     padding-top: 20px;
     display: block;
     margin-left: auto;
@@ -25,6 +44,11 @@
     position: relative;
     text-align: center;
     background: #ffffff;
+}
+
+.nav-bar{
+    margin: 25px 0px 8px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .nav-bar_item{
@@ -50,10 +74,20 @@
     color: #d32521;
 }
 
+.gradient_section{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #E2E2E2 0%, #FFFFFF 15%);
+    /* transition:  border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 /* ------------------ Spotlight ------------------ */
 
 .spotlight{
     box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 .spotlight_container{
@@ -75,7 +109,7 @@
     display: flex;
 }
 
-.spotlight_col_wrap{
+.spotlight_col_wrap_subline{
     width: 100%;
     border-style: solid;
     border-width: 0px 1px 0px 0px;
@@ -85,39 +119,236 @@
     padding: 0% 10% 0% 0%;
 }
 
-.spotlight_news1{
+/* ------------------ 2 Sublines ------------------ */
+
+.spotlight_subline{
     width: 100%;
 }
 
 .link{
     text-decoration: none;
 }
-.spotlight_news1 > a >.thumbnail{
-    width: 100%;
-    margin-bottom: 5px;
+.spotlight_subline> a >.thumbnail{
+    max-width: 100%;
+    margin-bottom: 15px;
 }
 
-.spotlight_news1 > a > .genre{
+.spotlight_subline > a > .genre{
     /* transition: 0.5s; */
     text-transform: uppercase;
     text-decoration: none;
     font-family:Philosopher;
-    color: #000000;
-    font-size: 14px;
+    color: #d32521;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: .05em;
-    margin-bottom: 5px;
+    margin: 0px 0px 10px 0px;
 }
-.spotlight_news1 > a > .caption{
+
+.spotlight_subline> a > .title{
+    /* transition: 0.5s; */
     text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Cormorant;
     color: #000000;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    line-height: 1.5em;
+    margin: 0px 0px 20px 0px;
+}
+
+.spotlight_subline > .author{
+    /* transition: 0.5s; */
+    text-decoration: none;
+    font-family:Philosopher;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0px 0px 0px 0px;
+}
+
+.divider{
+    margin-top: 27px;
+    margin-bottom: 30px;
+    border-width: 1px 0px 0px 0px;
+    border-color: #E9E0E0;
+    border-style: solid;
+}
+
+/* ------------------ Headlines ------------------ */
+
+.spotlight_col_wrap_headline{
+    width: 100%;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #E9E0E0;
+    /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+    margin: 10px 0px 0px 0px;
+    padding: 0% 5% 0% 5%;
+}
+.spotlight_headline{
+    width: 100%;
+}
+
+.spotlight_headline> a >.thumbnail{
+    max-width: 100%;
+    margin-bottom: 25px;
+    /* display: inline-block; */
+}
+
+.spotlight_headline> a > .genre{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family:Philosopher;
+    color: #d32521;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: .05em;
-    margin-bottom: 5px;
+    margin: 0px 0px 15px 0px;
+}
 
+.spotlight_headline> a > .title{
+    /* transition: 0.5s; */
+    text-decoration: none;
+    text-align: center;
+    font-family:Cormorant;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1.3em;
+    margin: 0px 0px 20px 0px;
+}
+
+.spotlight_headline >.divider{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-width: 3px 0px 0px 0px;
+    margin-left: 45%;
+    margin-right: 45%;
+    border-color: #d32521;
+    border-style: solid;
+    text-align: center;
+}
+
+.spotlight_headline> .summary{
+    /* transition: 0.5s; */
+    text-decoration: none;
+    font-family:Cormorant;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 1.6em;
+    margin: 0px 20px 25px 20px;
+    text-align: center;
+}
+
+.spotlight_headline > .author{
+    /* transition: 0.5s; */
+    text-decoration: none;
+    font-family:Philosopher;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+/* ------------------ Latest ------------------ */
+
+.spotlight_col_wrap_latest{
+    width: 100%;
+    /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+    margin: 0px 0px 0px 0px;
+    padding: 0% 0% 0% 10%;
+}
+
+.spotlight_latest{
+    width: 100%;
+    /* display: flex; */
 }
 
 
+.spotlight_latest_header{
+    width: 100%;
+    margin-bottom: 25px;
+}
 
+.spotlight_latest_header>.divider{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-width: 1px 0px 0px 0px;
+    border-color: #E9E0E0;
+    border-style: solid;
+}
+
+.spotlight_latest_header>.latest{
+    font-family:Philosopher;
+    color: #d32521;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.latest_row{
+    width: 100%;
+    display: flex;
+}
+
+.latest_col_1{
+    width: 70%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 0px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.latest_col_1> a > .title{
+    /* transition: 0.5s; */
+    text-decoration: none;
+    text-align: left;
+    font-family:Cormorant;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 1.6em;
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+}
+
+.latest_col_1> .author{
+    /* transition: 0.5s; */
+    text-decoration: none;
+    font-family:Philosopher;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+
+.latest_col_2{
+    width: 30%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.latest_col_2> a >.thumbnail{
+    max-width: 100%;
+}
+
+.spotlight_col_wrap_latest > .divider{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-width: 1px 0px 0px 0px;
+    border-color: #E9E0E0;
+    border-style: solid;
+    display: block;
+}
