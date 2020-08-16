@@ -1,14 +1,20 @@
 @font-face {
     font-family: Philosopher;
-    src: local('Philosopher-Regular.ttf') format('ttf'),
+    /* src: local('Philosopher-Regular.ttf') format('ttf'),
          local('Philosopher-Bold.ttf') format('ttf'),
          local('Philosopher-Bolditalic.ttf') format('ttf'),
-         local('Philosopher-Italic.ttf') format('ttf');
+         local('Philosopher-Italic.ttf') format('ttf'); */
+
+    src: url('http://fauverick.github.io/Cuong-Tai/font/Philosopher/Philosopher-Bold.ttf') format('ttf'),
+         url('http://fauverick.github.io/Cuong-Tai/font/Philosopher/Philosopher-BoldItalic.ttf') format('ttf'),
+         url('http://fauverick.github.io/Cuong-Tai/font/Philosopher/Philosopher-Italic.ttf') format('ttf'),
+         url('http://fauverick.github.io/Cuong-Tai/font/Philosopher/Philosopher-Regular.ttf') format('ttf');
+
 }
 
 @font-face {
     font-family: Cormorant;   
-    src: local('Cormorant-Bold.ttf') format('ttf'),
+    /* src: local('Cormorant-Bold.ttf') format('ttf'),
          local('Cormorant-BoldItalic.ttf') format('ttf'),
          local('Cormorant-Italic.ttf') format('ttf'),
          local('Cormorant-Light.ttf') format('ttf'),
@@ -17,7 +23,18 @@
          local('Cormorant-MediumItalic.ttf') format('ttf'),
          local('Cormorant-Regular.ttf') format('ttf'),
          local('Cormorant-SemiBold.ttf') format('ttf'),
-         local('Cormorant-SemiBoldItalic.ttf') format('ttf');
+         local('Cormorant-SemiBoldItalic.ttf') format('ttf'); */
+    
+    src: url('http://fauverick.github.io/Cuong-Tai/font/Cormorant/Cormorant-Bold.ttf') format('ttf'),
+         url('http://fauverick.github.io/Cuong-Tai/font/Cormorant/Cormorant-BoldItalic.ttf') format('ttf'),
+         url('http://fauverick.github.io/Cuong-Tai/font/Cormorant/Cormorant-Italic.ttf') format('ttf'),
+         url('http://fauverick.github.io/Cuong-Tai/font/Cormorant/Cormorant-Light.ttf') format('ttf')
+         url('http://fauverick.github.io/Cuong-Tai/font/Cormorant/Cormorant-LightItalic.ttf') format('ttf'),
+         url('http://fauverick.github.io/Cuong-Tai/font/Cormorant/Cormorant-Medium.ttf') format('ttf'),
+         url('http://fauverick.github.io/Cuong-Tai/font/Cormorant/Cormorant-MediumItalic.ttf') format('ttf')
+         url('http://fauverick.github.io/Cuong-Tai/font/Cormorant/Cormorant-Regular.ttf') format('ttf'),
+         url('http://fauverick.github.io/Cuong-Tai/font/Cormorant/Cormorant-SemiBold.ttf') format('ttf'),
+         url('http://fauverick.github.io/Cuong-Tai/font/Cormorant/Cormorant-SemiBoldItalic.ttf') format('ttf');
 }
 body{
     display: block;
