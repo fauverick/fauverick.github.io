@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<style>
+    .header{
+        display: block;
+        margin: 0px 0px 0px 0px;
+        padding: 20px 0px 40px 0px;
+    }
+
+    .logo-center{
+        width: 29%;
+        padding-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table{
+        padding-top: 20px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+    }
+
+    thead{
+        background-color: rgb(243, 243, 237);
+    }
+
+    thead > tr > td {
+        padding: 15px;
+        border: 1px solid #f9f9f9;
+        border-collapse: collapse;
+        text-align: left;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    thead >tr > .no{
+        width: 40px;
+    }
+    thead >tr > .cover{
+        width: 150px;
+    }
+    /* thead >tr >.info{
+        width: 400px;
+    } */
+
+    thead >tr >.name{
+        width: 150px;
+    }
+
+    thead >tr >.author{
+        width: 150px;
+    }
+
+    tbody >tr:hover{
+        background-color:  #f9f9f9;
+        transition: 0.5s;
+    }
+
+    tbody > tr > td {
+        padding: 15px;
+        border: 1px solid rgb(240, 238, 235);
+        border-collapse: collapse;
+        text-align: left;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    
+    tbody >tr >.no{
+        font-weight: 700;
+    }
+    tbody >tr >.cover{
+        justify-content: center;
+    }
+
+    tbody >tr >.cover >img{
+        width: 100%;
+    }
+
+    tbody >tr >.name{
+        width: 150px;
+    }
+
+    thead >tr >.author{
+        width: 150px;
+    }
+</style>
+
+<body>
+    <div class = "header">
+        <a href = "">
+            <img src = "image/71felyXjfYL.png" alt = "logo" class = "logo-center">
+        </a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td class = "no"> STT </td>
+                <td class = "cover"> Bìa </td>
+                <td class = "name"> Tên sách </td>
+                <td class = "author"> Tác giả </td>
+                <td class = "info"> Thông tin </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class = "no"> 1 </td>
+                <td class = "cover">
+                    <img src = "image/kafka.jpg">
+                </td>
+                <td class = "name">
+                    Kafka Bên Bờ Biển
+                </td>
+                <td class = "author">
+                    Haruki Murakami
+                </td>
+                <td class = "info">
+                    <ul>
+                        <li>Giá bán: 129.000 VND</li>
+                        <li>Năm phát hành : 2008</li>
+                        <li>Nhà xuất bản: Nhã Nam</li>
+                        <li>Nội dung: </li>
+                    </ul>
+                   
+                </td>
+            </tr>
+
+            <tr>
+                <td class = "no"> 2 </td>
+                <td class = "cover">
+                    <img src = "image/norwegian-wood.jpg">
+                </td>
+                <td class = "name">
+                    Rừng Na Uy
+                </td>
+                <td class = "author">
+                    Haruki Murakami
+                </td>
+                <td class = "info">
+                    <ul>
+                        <li>Giá bán: 129.000 VND</li>
+                        <li>Năm phát hành : 2008</li>
+                        <li>Nhà xuất bản: Nhã Nam</li>
+                        <li>Nội dung: </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class = "no"> 3 </td>
+                <td class = "cover">
+                    <img src = "image/quake.jpg">
+                </td>
+                <td class = "name">
+                    Phía nam biên giới, phía tây mặt trời
+                </td>
+                <td class = "author">
+                    Haruki Murakami
+                </td>
+                <td class = "info">
+                    <ul>
+                        <li>Giá bán: 129.000 VND</li>
+                        <li>Năm phát hành : 2008</li>
+                        <li>Nhà xuất bản: Nhã Nam</li>
+                        <li>Nội dung: </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class = "no"> 4 </td>
+                <td class = "cover">
+                    <img src = "image/running.jpg">
+                </td>
+                <td class = "name">
+                    Tôi nói gì khi nói về chạy bộ?
+                </td>
+                <td class = "author">
+                    Haruki Murakami
+                </td>
+                <td class = "info">
+                    <ul>
+                        <li>Giá bán: 129.000 VND</li>
+                        <li>Năm phát hành : 2008</li>
+                        <li>Nhà xuất bản: Nhã Nam</li>
+                        <li>Nội dung: </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class = "no"> 5 </td>
+                <td class = "cover">
+                    <img src = "image/sputnik.jpg">
+                </td>
+                <td class = "name">
+                    Người tình sputnik
+                </td>
+                <td class = "author">
+                    Haruki Murakami
+                </td>
+                <td class = "info">
+                    <ul>
+                        <li>Giá bán: 129.000 VND</li>
+                        <li>Năm phát hành : 2008</li>
+                        <li>Nhà xuất bản: Nhã Nam</li>
+                        <li>Nội dung: </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
