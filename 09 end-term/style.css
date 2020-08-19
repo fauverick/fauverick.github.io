@@ -1,0 +1,397 @@
+body{
+    display: block;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+#active{
+    color: #d32521;
+}
+/* ------------------ Header ------------------ */
+
+.header{
+    display: block;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.logo-center{
+    width: 25%;
+    padding-top: 20px;
+    display: block;
+    margin-left: 50px;
+    /* margin-right: auto; */
+    padding-bottom: 20px;
+}
+
+.header> .divider1{
+    border-width: 15px 0px 0px 0px;
+    border-color: #000000;
+    border-style: solid;
+    display: block;
+}
+
+.header> .divider2{
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(216, 213, 213);
+    border-style: solid;
+    display: block;
+}
+
+.menu{
+    position: relative;
+    text-align: left;
+    background: #ffffff;
+    margin-left: 40px;
+}
+
+.nav-bar{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.nav-bar_item{
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.nav-bar_content{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arsenal;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .125em;
+}
+
+.nav-bar_content:hover{
+    color: #d32521;
+}
+
+
+.gradient_section{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #E2E2E2 0%, #FFFFFF 10%);
+    height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
+/* ------------------ Welcome ------------------ */
+
+.welcome{
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.welcome_container{
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.welcome_container > a > img {
+    max-width: 100%;
+}
+
+.welcome_container >.banner{
+    padding-left: 45px;
+    margin-left: 200px;
+    border-width: 0px 0px 0px 1px;
+    border-color: rgb(216, 213, 213);
+    border-style: solid;
+}
+
+.welcome_container > .banner> .genre{
+    font-family: Arsenal;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 0px 15px 0px;
+    color: rgb(107, 100, 100);
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+}
+
+
+.welcome_container > .banner> .title{
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
+    color: #000000;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+.welcome_container > .banner> .author{
+    font-family: Arsenal;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: rgb(107, 100, 100);
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+}
+
+/* ------------------ Profile ------------------ */
+.profile{
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.profile_container{
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    display: block;
+}
+
+.profile_container> .divider{
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(216, 213, 213);
+    border-style: solid;
+    display: block;
+}
+
+.profile_container> a> .genre{
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 57px;
+    margin: 15px 0px 15px 40px;
+    padding: 0px 0px 0px 0px;
+    color: #000000;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+.profile_container >.project{
+    padding-left: 45px;
+    margin-left: 200px;
+    border-width: 0px 0px 0px 1px;
+    border-color: rgb(216, 213, 213);
+    border-style: solid;
+    position: relative;
+}
+
+.project_row{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.project> .name{
+    margin: 0px 0px 0px 0px;
+    padding: 20px 0px 25px 0px;
+}
+
+.project> .name > h3{
+    font-family: Arsenal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(107, 100, 100);
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+.project_row> .project_col{
+    width: calc(100%/3 - 50px);
+    height: 100%;
+    position: relative;
+    float: left;
+    display: block;
+    padding: 0px 25px 0px 25px;
+}
+
+.project_row> .project_col> a> img{
+    width: 100%;
+    transition: 0.8s;
+}
+
+.project_row> .project_col> a> img:hover{
+    filter: brightness(80%);
+}
+
+.project_row> .project_col> .caption{
+    width: 100%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgb(216, 213, 213);
+    border-style: solid;
+    position: relative; 
+}
+
+.project_row> .project_col> .caption:hover{
+    border-color: #d32521;
+}
+
+.project_row> .project_col> .caption> a >p{
+    font-family: Arsenal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(107, 100, 100, 0.692);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.project_row> .project_col> .caption> a >p:hover{
+    color: #d32521;
+}
+
+.project_row> .end{
+    color: rgba(105, 48, 48, 0);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    line-height: 0px;
+}
+
+/* ------------------ About ------------------ */
+.about{
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.about_container{
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    display: block;
+}
+
+.about_container> .divider{
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(216, 213, 213);
+    border-style: solid;
+    display: block;
+}
+
+.about_container> a> .genre{
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 57px;
+    margin: 15px 0px 15px 40px;
+    padding: 0px 0px 0px 0px;
+    color: #000000;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+.intro{
+    margin-left: 200px;
+    position: relative;
+}
+
+.intro> .intro_row{
+    height: 1000px;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.intro_row> .intro_col_img{
+    width: calc(50% - 90px);
+    height: 100%;
+    position: relative;
+    float: left;
+    display: block;
+    padding: 35px 45px 0px 45px;
+    border-width: 0px 0px 0px 1px;
+    border-color: rgb(216, 213, 213);
+    border-style: solid;
+}
+
+.intro_row> .intro_col_img> img{
+    width: 100%;
+}
+
+.intro_row> .intro_col_content{
+    width: calc(50% - 100px);
+    height: 100%;
+    position: relative;
+    float: left;
+    display: block;
+    padding: 0px 45px 0px 45px;
+    margin: 35px 0px 100px 0px;
+    border-width: 0px 0px 0px 1px;
+    border-color: rgb(216, 213, 213);
+    border-style: solid;
+}
+
+.intro_row> .intro_col_content> .name{
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 45px;
+    margin: 0px 0px 28px 0px;
+    padding: 0px 0px 0px 0px;
+    color: #000000;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.5em;
+}
+
+.intro_row> .intro_col_content> .content{
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+    color: #000000;
+    letter-spacing: 0.065em;
+    text-transform: none;
+    line-height: 1.5em;
+}
+
+.intro_row> .intro_col_content> .blank{
+    height: 1px;
+}
+
+.intro_row> .intro_col_content> img{
+    width: 100%;
+}
+
+.intro_row>  .end{
+    color: rgba(105, 48, 48, 0);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    line-height: 0px;
+}
+
+/* ------------------ Footer ------------------ */
+
+.footer{
+    display: block;
+    margin: 100px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.footer> .divider{
+    border-width: 50px 0px 0px 0px;
+    border-color: #000000;
+    border-style: solid;
+    display: block;
+}
