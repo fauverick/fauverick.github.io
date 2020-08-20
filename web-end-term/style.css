@@ -100,7 +100,7 @@ body{
     position: relative;
 }
 
-.welcome_container > a > img {
+.welcome_container > img {
     max-width: 100%;
 }
 
@@ -146,10 +146,127 @@ body{
     text-transform: uppercase;
 }
 
+/* ------------------ About ------------------ */
+.about{
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.about_container{
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    display: block;
+}
+
+.about_container> .divider{
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(216, 213, 213);
+    border-style: solid;
+    display: block;
+}
+
+.about_container> .genre{
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 57px;
+    margin: 15px 0px 15px 40px;
+    padding: 0px 0px 0px 0px;
+    color: #000000;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+.intro{
+    margin-left: 200px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    border-width: 0px 0px 0px 1px;
+    border-color: rgb(216, 213, 213);
+    border-style: solid;
+}
+
+.intro> .intro_row{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.intro> .intro_row> .intro_col_img{
+    width: calc(50% - 90px);
+    height: 100%;
+    position: relative;
+    float: left;
+    display: block;
+    /* padding: 35px 45px 0px 45px; */
+    padding: 0px 45px 0px 45px;
+    margin: 35px 0px 0px 0px;
+    border-width: 0px 1px 0px 0px;
+    border-color: rgb(216, 213, 213);
+    border-style: solid;
+}
+
+.intro> .intro_row> .intro_col_img> img{
+    width: 100%;
+}
+
+.intro> .intro_row> .intro_col_content{
+    width: calc(50% - 100px);
+    height: 100%;
+    position: relative;
+    float: left;
+    display: block;
+    padding: 35px 45px 0px 45px;
+}
+
+.intro> .intro_row> .intro_col_content> .name{
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 45px;
+    margin: 0px 0px 28px 0px;
+    padding: 0px 0px 0px 0px;
+    color: #000000;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.5em;
+}
+
+.intro> .intro_row> .intro_col_content> .content{
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+    color: #000000;
+    letter-spacing: 0.065em;
+    text-transform: none;
+    line-height: 1.5em;
+}
+
+.intro> .intro_row> .intro_col_content> .blank{
+    height: 1px;
+}
+
+.intro> .intro_row> .intro_col_content> img{
+    width: 100%;
+}
+
+.intro> .intro_row>  .end{
+    color: rgba(105, 48, 48, 0);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    line-height: 0px;
+}
+
 /* ------------------ Profile ------------------ */
 .profile{
     box-sizing: border-box;
     margin-bottom: 50px;
+    display: flex;
+
 }
 
 .profile_container{
@@ -165,6 +282,17 @@ body{
     border-color: rgb(216, 213, 213);
     border-style: solid;
     display: block;
+}
+
+.profile_container> .genre{
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 57px;
+    margin: 15px 0px 15px 40px;
+    padding: 0px 0px 0px 0px;
+    color: #000000;
+    letter-spacing: 0em;
+    text-transform: none;
 }
 
 .profile_container> a> .genre{
@@ -268,118 +396,6 @@ body{
     line-height: 0px;
 }
 
-/* ------------------ About ------------------ */
-.about{
-    box-sizing: border-box;
-    margin-bottom: 50px;
-}
-
-.about_container{
-    max-width: 1400px;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    display: block;
-}
-
-.about_container> .divider{
-    border-width: 1px 0px 0px 0px;
-    border-color: rgb(216, 213, 213);
-    border-style: solid;
-    display: block;
-}
-
-.about_container> a> .genre{
-    font-family: Playfair Display;
-    font-weight: 400;
-    font-size: 57px;
-    margin: 15px 0px 15px 40px;
-    padding: 0px 0px 0px 0px;
-    color: #000000;
-    letter-spacing: 0em;
-    text-transform: none;
-}
-
-.intro{
-    margin-left: 200px;
-    position: relative;
-}
-
-.intro> .intro_row{
-    height: 1000px;
-    width: 100%;
-    height: 100%;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-
-.intro_row> .intro_col_img{
-    width: calc(50% - 90px);
-    height: 100%;
-    position: relative;
-    float: left;
-    display: block;
-    padding: 35px 45px 0px 45px;
-    border-width: 0px 0px 0px 1px;
-    border-color: rgb(216, 213, 213);
-    border-style: solid;
-}
-
-.intro_row> .intro_col_img> img{
-    width: 100%;
-}
-
-.intro_row> .intro_col_content{
-    width: calc(50% - 100px);
-    height: 100%;
-    position: relative;
-    float: left;
-    display: block;
-    padding: 0px 45px 0px 45px;
-    margin: 35px 0px 100px 0px;
-    border-width: 0px 0px 0px 1px;
-    border-color: rgb(216, 213, 213);
-    border-style: solid;
-}
-
-.intro_row> .intro_col_content> .name{
-    font-family: Playfair Display;
-    font-weight: 400;
-    font-size: 45px;
-    margin: 0px 0px 28px 0px;
-    padding: 0px 0px 0px 0px;
-    color: #000000;
-    letter-spacing: 0em;
-    text-transform: none;
-    line-height: 1.5em;
-}
-
-.intro_row> .intro_col_content> .content{
-    font-family: Playfair Display;
-    font-weight: 400;
-    font-size: 20px;
-    margin: 20px 0px 20px 0px;
-    padding: 0px 0px 0px 0px;
-    color: #000000;
-    letter-spacing: 0.065em;
-    text-transform: none;
-    line-height: 1.5em;
-}
-
-.intro_row> .intro_col_content> .blank{
-    height: 1px;
-}
-
-.intro_row> .intro_col_content> img{
-    width: 100%;
-}
-
-.intro_row>  .end{
-    color: rgba(105, 48, 48, 0);
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    line-height: 0px;
-}
 
 /* ------------------ Footer ------------------ */
 
@@ -387,11 +403,43 @@ body{
     display: block;
     margin: 100px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    position: relative;
+    height: 150px;
+    display: flex;
+    background-color:  rgb(45, 46, 47) ;
 }
 
-.footer> .divider{
-    border-width: 50px 0px 0px 0px;
-    border-color: #000000;
-    border-style: solid;
-    display: block;
+.footer> .footer_col_info{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer> .footer_col_info> .water_mark{
+    font-family: Arsenal;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: #ffffff;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+}
+
+.footer> .footer_col_logo{
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer> .footer_col_logo> img{
+    width: 80%;
 }
