@@ -389,7 +389,8 @@ body{
 }
 
 .project_row> .project_col> a> img:hover{
-    filter: brightness(80%);
+    /* filter: brightness(80%); */
+    transform: scale(1.2);
 }
 
 .project_row> .project_col> .caption{
