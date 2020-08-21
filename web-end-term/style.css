@@ -19,13 +19,47 @@ body{
     padding: 0px 0px 0px 0px;
 }
 
-.logo-center{
-    width: 25%;
+
+
+.logo_row{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+}
+
+.logo_row> .logo_col_img{
+    width: 60%;
+}
+
+.logo_row> .logo_col_img> a> .logo-center{
+    width: 41.67%;
     padding-top: 20px;
     display: block;
     margin-left: 50px;
     /* margin-right: auto; */
     padding-bottom: 20px;
+}
+
+.logo_row> .logo_col_social{
+    width: 40%;
+    padding-left: 13%;
+    padding-right: 13%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.logo_row> .logo_col_social> .logo_col_social_icon{
+    width: 33.33%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logo_row> .logo_col_social> .logo_col_social_icon> a> img{
+    width: 100%;
 }
 
 .header> .divider1{
@@ -320,6 +354,7 @@ body{
     height: 100%;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    display: flex;
 }
 
 .project> .name{
