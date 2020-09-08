@@ -12,6 +12,8 @@ body{
 
 .header{
     display: block;
+    position: -webkit-sticky;
+    position: sticky;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
@@ -45,6 +47,7 @@ body{
 
 .menu{
     position: relative;
+    position: sticky;
     text-align: center;
 }
 
