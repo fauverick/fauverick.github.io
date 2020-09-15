@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class = "container">
+        <div class = "tool">
+            <div class = "tool_color">
+                <button class = "color_btn color_btn_1" color = "black">
+                </button>
+                <button class = "color_btn color_btn_2" color = "grey">
+                </button>
+                <button class = "color_btn color_btn_3" color = "blue">
+                </button>
+                <button class = "color_btn color_btn_4" color = "red">
+                </button>
+                <button class = "color_btn color_btn_5" color = "yellow">
+                </button>
+                <button class = "color_btn color_btn_6" color = "green">
+                </button>
+            </div>
+
+            <div class = "tool_control">
+                <button class = "control_btn btn_eraser">
+                    <img src = "clean.svg" alt = "eraser"> Tẩy
+                </button>
+                <button class = "control_btn btn_reset">
+                    <img src = "reset.svg" alt = "reset"> Reset
+                </button>
+            </div>
+
+            <div class = "tool_btn">
+                <button class = "size_btn size_btn_1" size = "25">
+                    <img src = "line.svg" alt = "line"> 
+                </button>
+                <button class = "size_btn size_btn_2" size = "20">
+                    <img src = "line.svg" alt = "line"> 
+                </button>
+                <button class = "size_btn size_btn_3" size = "15">
+                    <img src = "line.svg" alt = "line"> 
+                </button>
+                <button class = "size_btn size_btn_4" size = "10">
+                    <img src = "line.svg" alt = "line"> 
+                </button>
+                <button class = "size_btn size_btn_5" size = "5">
+                    <img src = "line.svg" alt = "line"> 
+                </button>
+            </div>
+        </div>
+
+        <canvas id = "canvas"> </canvas>
+        <script src = "./paint.js"></script>
+    </div>
+</body>
+</html>
+
