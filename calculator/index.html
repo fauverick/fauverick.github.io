@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arsenal">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+rel="stylesheet">
+
+<style>
+    body{
+        display: flex;
+        height: 90vh ;
+        overflow: hidden;   
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .title  p{
+        color: white;
+        font-family: Arsenal;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1em;
+        text-align: center;
+        background: rgb(0,129,207);
+        background: linear-gradient(45deg, rgba(0,129,207,1) 0%, rgba(0,143,122,1) 100%);
+        padding: 20px 25px 20px 25px;
+        border-radius: 50px;
+        width: 100%;
+    }
+
+    .game{
+        display: block;
+        padding-left: 25%;
+        padding-right: 25%;
+        margin-top: 50px;
+        width: 50%;
+    }
+
+    .game .wrap {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .game .wrap .game_container{
+        flex: 0 calc(75% / 5);
+        padding:0px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+    .game .wrap .game_container .square{
+        height: 100px;
+        width: 100px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;  
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        font-family: Arsenal;
+        font-size: 40px;
+        text-align:center;
+    }
+
+    .game .wrap .game_container .square p{
+        margin: 0px;
+        color: black
+    }
+
+    .game .wrap .game_container > p{
+        font-family: Arsenal;
+        font-size: 40px;
+        text-align:center;
+        margin: 0px;
+    }
+
+    .game .wrap .game_container .check{
+        height: 50px;
+        width: 100px;
+        background: linear-gradient(45deg, rgba(0,129,207,1) 0%, rgba(0,143,122,1) 100%);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        font-family: Arsenal;
+        font-size: 20px;
+        text-align:center;
+        border: none;
+        cursor: pointer;
+    }
+
+    .game .wrap .game_container .check::after{
+        border: none;
+    }
+
+    .game .wrap .game_container .check p{
+        margin: 0px;
+        color: white;
+    }
+
+</style>
+
+<body>
+    <div class = "title">
+        <p>THỬ TÀI TÍNH TOÁN NÀO BẠN ƠI!</p>
+    </div>
+    <div class = "game">
+        <div class = "wrap">
+            <div class = "game_container">
+                <div class = "square">
+                    <p>5</p>
+                </div>
+            </div>
+            <div class = "game_container">
+                <p>+</p>
+            </div>
+            <div class = "game_container">
+                <div class = "square">
+                    <p>5</p>
+                </div>
+            </div>
+            <div class = "game_container">
+                <p>=</p>
+            </div>
+            <div class = "game_container">
+                <input class = "square" placeholder="...">
+                </input>
+            </div>
+
+            <div class = "game_container" style = " flex: 0 25%">
+                <button class = "check">
+                    <p>Check!</p>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+<script src = "main.js"></script>
