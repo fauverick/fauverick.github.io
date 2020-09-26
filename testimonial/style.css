@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    height: 60%;
+    width: 60%;
+    background-color: #d32521;
+    padding: 50px 50px 50px 50px;
+}
+
+.card .content{
+    font-size: 22px;
+    font-family: Prata;
+    text-align: center;
+    color: #ffffff;
+    line-height: 2.5rem;
+    padding: 0px 50px 0px 50px;
+    letter-spacing: 0.025rem;
+    height: 130px;
+}
+
+.card .name{
+    font-size: 20px;
+    font-family: Prata;
+    text-align: center;
+    font-style: italic;
+    color: #ffffff;
+    line-height: 2.5rem;
+    padding: 0px 50px 15px 50px;
+}
+
+.card .fa{
+    color: #ffffff;
+    display: block;
+    font-size: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.card .ava_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .ava_container .ava{
+    height: 65px;
+    width: 65px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.card .ava_container #unactive{
+    transform: scale(1);
+}
+
+.card .ava_container .ava .ava_pic{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.card .ava_container #active{
+    transform: scale(1.25);
+}
