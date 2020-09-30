@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <div class = "container">
+        <div class = "header">
+            <p>To Do List</p>
+        </div>
+        <div class="todo-input">
+            <input type="text" placeholder="Add a job" id="todo-input">
+            <button id="btn-add">Add</button>
+        </div>
+        <div class="todo-option">
+            <div class="todo-option-item">
+                <input type="radio" name="todo-option-item" id="all" checked value="1">
+                <label for="all" id = "all-btn"> All</label>
+            </div>
+            <div class="todo-option-item">
+                <input type="radio" name="todo-option-item" id="unactive" value="2">
+                <label for="unactive" id = "unactive-btn">Unfinished</label>
+            </div>
+            <div class="todo-option-item">
+                <input type="radio" name="todo-option-item" id="active" value="3">
+                <label for="active" id = "active-btn">Finished</label>
+            </div>
+        </div>
+
+        <div class="todo-container">
+            <div class="todo-list">
+
+                <div class="nowork-item active-todo">
+                    <div class="nowork">
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- <div class="todo-item active-todo">
+                    <div class="todo-item-title">
+                        <input type="checkbox">
+                        <p>Làm bài tập Javascript Phần array + string</p>
+                    </div>
+                    <div class="option">
+                        <button class="btn btn-update">
+                            <img src="./img/pencil.svg" alt="icon">
+                        </button>
+                        <button class="btn btn-delete">
+                            <img src="./img/remove.svg" alt="icon">
+                        </button>
+                    </div>
+                </div> -->
+
+                <!-- <div class="todo-item">
+                    <div class="todo-item-title">
+                        <input type="checkbox">
+                        <p>Mua đồ ăn trưa</p>
+                    </div>
+                    <div class="option">
+                        <button class="btn btn-update">
+                            <img src="./img/pencil.svg" alt="icon">
+                        </button>
+                        <button class="btn btn-delete">
+                            <img src="./img/remove.svg" alt="icon">
+                        </button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src = "js/main.js"></script>

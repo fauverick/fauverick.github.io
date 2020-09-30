@@ -1,0 +1,202 @@
+body{
+    display: flex;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.container{
+    /* height: 70%; */
+    width: 600px;
+    background-color: #0278ae;
+    padding-bottom: 50px;
+    margin: 50px 0px 50px 0px;
+}
+
+.container .header{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .header p{
+    font-family: Alata;
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.todo-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 7% 0% 7%;
+}
+
+.todo-input input{
+    width: 80%;
+    min-height: 40px;
+    font-family: Alata;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: left;
+    outline:none;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-color: #ffffff00;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.todo-input button{
+    min-height: 45px;
+    width: 20%;
+    font-family: Alata;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    outline:none;
+    background-color: #51adcf;
+    border-radius: 20px;
+    border-color: #ffffff00;
+    cursor: pointer;
+}
+
+.todo-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 7% 0% 7%;
+}
+
+.todo-option .todo-option-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #51adcf;
+    border-radius: 20px;
+    border-color: #ffffff00;
+    cursor: pointer;
+    font-family: Alata;
+    color: #ffffff;
+    outline:none;
+    padding: 0px 15px 0px 10px; 
+    margin: 15px 10px 15px 10px;
+    
+}
+
+.todo-option .todo-option-item label{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 7% 0% 7%;
+}
+
+.todo-container .todo-list{
+    width: 100%;
+    padding: 0px 0px 0px 0px; 
+    margin: 15px 0px 15px 0px;
+}
+
+.todo-container .todo-list .todo-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px 15px 0px;
+    min-height: 45px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-color: #ffffff00;
+    outline:none;
+}
+
+.todo-container .todo-list .todo-item .todo-item-title{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px
+}
+
+.todo-container .todo-list .todo-item .todo-item-title input{
+    width: 8%;
+    margin-right: 15px;
+    border-width: 2px;
+    appearance: radio;
+}
+
+.todo-container .todo-list .todo-item .todo-item-title p{
+    width: calc(92% - 24px);
+    font-family: Alata;
+    color: #000000;
+    font-size: 17px;
+    padding: 0px;
+    margin: 12px 0px 12px 0px;
+}
+
+.todo-container .todo-list .nowork-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px 15px 0px;
+    min-height: 45px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-color: #ffffff00;
+    outline:none;
+}
+
+.todo-container .todo-list .nowork-item .nowork p{
+    width: calc(100%);
+    font-family: Alata;
+    color: #888888;
+    font-size: 17px;
+    padding: 0px;
+    text-align: center;
+    margin: 12px 0px 12px 0px;
+}
+
+.todo-container .todo-list .todo-item .option{
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.todo-container .todo-list .todo-item .option .btn{
+    width: 50%;
+    height: 45px;
+    background-color: #ffffff;
+    border-color: #ffffff00;
+    outline:none;
+    padding: 0px 2px 0px 2px;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-container .todo-list .todo-item .option .btn img{
+    width: 100%;
+    cursor: pointer;
+}
