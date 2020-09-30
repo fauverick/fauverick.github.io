@@ -1,4 +1,4 @@
-let worklist;
+let worklist = [];
 
 let container = document.querySelector(".container");
 let maxheight;
@@ -70,14 +70,14 @@ function render(i){
                 addbtn.innerText = "Add";
             }
             else alert("Công việc không được để trống");
-            localStorage.setItem("worklist", JSON.stringify(worklist));
+            sessionStorage.setItem("worklist", JSON.stringify(worklist));
         }
     }   
 
     erase.onclick = function(){
         newitem.remove();
         worklist.splice(i, 1);
-        localStorage.setItem("worklist", JSON.stringify(worklist));
+        sessionStorage.setItem("worklist", JSON.stringify(worklist));
         if(worklist.length == 0){
             alertnojob("all");
          }
@@ -93,13 +93,15 @@ function render(i){
             title_content.style.textDecoration = "none";
         }
         newitem.status = worklist[i].status;
-        localStorage.setItem("worklist", JSON.stringify(worklist));
+        sessionStorage.setItem("worklist", JSON.stringify(worklist));
     }
     maxheight = container.style.height;
 }
 
 function retrievestorage(){
-    worklist = JSON.parse(localStorage.getItem("worklist"));
+    worklist = JSON.parse(sessionStorage.getItem("worklist"));
+    console.log(worklist);
+    if (worklist == null) worklist = [];
     if(worklist.length == 0) {
         nowork.style.display = "flex";
         nowork.querySelector("p").innerText = "You have no job today";
@@ -129,7 +131,7 @@ addbtn.onclick = function(){
         worklist.push(newjob);
         render(worklist.length - 1);
         inputwork.value = "";
-        localStorage.setItem("worklist", JSON.stringify(worklist));
+        sessionStorage.setItem("worklist", JSON.stringify(worklist));
     }
     else alert("Công việc không được để trống")
     let h = container.style.height;
