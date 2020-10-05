@@ -1,18 +1,18 @@
-@font-face {
+/* @font-face {
     font-family: 'Alata';
     src:  url('../fonts/Alata-Regular.woff2') format('woff2');
     font-weight: 400;
-}
+} */
 
 @font-face {
     font-family: 'Alata';
     src:  url('../fonts/Alata-Regular.woff2') format('woff2');
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 
 @font-face {
     font-family: 'Prata';
-    src:  url('../fonts/Prata-Regular.woff2') format('woff2');
+    src:  url('../fonts/JosefinSans-SemiBold.woff2') format('woff2');
     font-weight: 400;
 }
 
@@ -175,6 +175,7 @@ a{
     .fixed-menu .menu-container .menu-links ul{
         padding: 0;
         margin: 0;
+        width: 3.5rem;
     }
 
     #social {
@@ -185,6 +186,7 @@ a{
 
 .new-menu{
     display:block;
+    transition-delay: .8s;
 }
 
 .new-menu .new-menu-container{
@@ -325,12 +327,12 @@ a{
 
 .spotlight_container .spotlight_col1 .spotlight_content .title{
     font-family: Prata;
-    font-size: 28px;
+    font-size: 32px;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.8);
     color: #ffffff;
     line-height: 3.5rem;
-    padding: 5px 0px 5px 0px;
+    padding: 10px 0px 5px 0px;
     display: inline;
     box-shadow: 10px 0 0 rgba(0, 0, 0, 0.8), -10px 0 0 rgba(0, 0, 0, 0.8);
 }
@@ -435,7 +437,8 @@ a{
 
 .spotlight_container .spotlight_col2 .spotlight_news1 .news1_content .title{
     font-family: Prata;
-    font-size: 16px;
+    font-size: 20px;
+    letter-spacing: -0.5px;
     text-align: left;
     color: #000000;
     line-height: 1.8rem;
@@ -501,7 +504,8 @@ a{
 
 .spotlight_container .spotlight_col2 .spotlight_news2 .news2_content .title{
     font-family: Prata;
-    font-size: 15px;
+    font-size: 17px;
+    letter-spacing: -0.3px;
     text-align: left;
     color: #000000;
     line-height: 1.8rem;
@@ -585,7 +589,8 @@ a{
     }
 
     .spotlight_container .spotlight_col2 .spotlight_news1 .news1_content .title{
-        font-size: 20px;
+        font-size: 22px;
+        letter-spacing: -0.2px;
         line-height: 2rem;
     }
     
@@ -600,7 +605,8 @@ a{
     }
 
     .spotlight_container .spotlight_col2 .spotlight_news2 .news2_content .title{
-        font-size: 18px;
+        font-size: 19px;
+        letter-spacing: -0.2px;
         line-height: 2rem;
     }
     
@@ -639,7 +645,7 @@ a{
     .spotlight_container .spotlight_col1 .spotlight_content{
         padding-top: 20px;
         margin-left: 20px;
-        padding-left: 40px;
+        padding-left: 30px;
     }
     
     .spotlight_container .spotlight_col1 .spotlight_content .tag{
@@ -647,7 +653,8 @@ a{
     }
 
     .spotlight_container .spotlight_col1 .spotlight_content .title{
-        font-size: 23px;
+        font-size: 26px;
+        letter-spacing: -0.4px;
         line-height: 3.1rem;
     }
 
@@ -671,7 +678,8 @@ a{
     }
 
     .spotlight_container .spotlight_col2 .spotlight_news1 .news1_content .title{
-        font-size: 16px;
+        font-size: 18px;
+        letter-spacing: -0.2px;
         line-height: 1.8rem;
     }
     
@@ -691,7 +699,8 @@ a{
     }
 
     .spotlight_container .spotlight_col2 .spotlight_news2 .news2_content .title{
-        font-size: 15px;
+        font-size: 16px;
+        letter-spacing: -0.2px;
         line-height: 1.8rem;
     }
     
@@ -738,7 +747,7 @@ a{
 @media screen and (max-width: 1024px) {
     .eat_container .eat_banner .logo{
         font-size: 50px;
-        margin: 0px 0px 0px 20px;
+        margin: 0px 0px 0px 80px;
     }
 }
 
@@ -756,7 +765,8 @@ a{
 
 .eat_container .content_container .content_wrapper{
     display: flex;
-    align-items: center;
+    flex-flow: row wrap;
+    /* align-items: center; */
 }
 
 .content_wrapper .post_container{
@@ -771,6 +781,11 @@ a{
     margin-bottom: 20px;
 }
 
+.content_wrapper .post_container .headline{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 0px 0px 0px 5px;
+}
 
 .content_wrapper .post_container .post_pic img{
     width: 100%;
@@ -797,12 +812,12 @@ a{
 }
 .content_wrapper .post_container .post_content .title{
     font-family: Prata;
-    font-size: 22px;
+    font-size: 28px;
     text-align: left;
     color: #000000;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.8px;
     line-height: 2.5rem;
-    padding: 0 0 10px 0;
+    padding: 10px 0 10px 0;
     margin: 0;
 }
 
@@ -823,6 +838,17 @@ a{
     color: #888888;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    padding: 0 0 3px 0;
+    margin: 0;
+}
+
+.content_wrapper .post_container .post_content .date{
+    font-family: Alata;
+    font-size: 10px;
+    text-align: left;
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     padding: 0 0 10px 0;
     margin: 0;
 }
@@ -830,14 +856,42 @@ a{
 @media screen and (max-width: 1023px) {
     .content_wrapper .post_container{
         flex: 0 calc(50%);
+        box-sizing: border-box;
         padding: 0px 40px 0px 0px;
+        display: block;
+    }
+
+    .content_wrapper .post_container .post_content .title{
+        font-size: 26px;
+        letter-spacing: -0.6px;
+        line-height: 2.5rem;
+        padding: 10px 0 10px 0;
+        margin: 0;
+    }
+    
+    .content_wrapper .post_container .post_content .sum{
+        font-size: 15px;
+        line-height: 1.2rem;
+        padding: 0 0 10px 0;
+        margin: 0;
+    }
+    
+    .content_wrapper .post_container .post_content .author{
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        padding: 0 0 10px 0;
+        margin: 0;
+    }
+
+    .content_wrapper .post_container .post_content .date{
+        padding: 0 0 30px 0;
+        margin: 0;
     }
 }
 
 @media screen and (max-width: 640px) {
     .eat_container .content_container{
         margin: 10px 20px 10px 20px;
-       
     }
     .eat_container .content_container .content_wrapper{
         display: block;
@@ -865,8 +919,8 @@ a{
     }
 
     .content_wrapper .post_container .post_content .title{
-        font-size: 16px;
-        letter-spacing: 0.5px;
+        font-size: 18px;
+        letter-spacing: -0.2px;
         line-height: 2rem;
         padding: 0 0 10px 0;
         margin: 0;
