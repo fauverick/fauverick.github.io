@@ -67,7 +67,7 @@ btn_roll.onclick = function(){
         dice2.src = "./img/dice-" + `${num2}` + ".png";
         if(num1 == 1 || num2 == 1){
             player[current].querySelector(".player-current-score").innerHTML = 0;
-            role1.querySelector(".role1_no").innerHTML = current;
+            role1.querySelector(".role1_no").innerHTML = current + 1;
             role1.style.display = "block";
             switchplayer();
         }
