@@ -1,0 +1,153 @@
+body{
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_container{
+    display:flex;
+    width: 1200px;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.ms_container{
+    height: 500px;
+    width: 900px;
+    max-width: 80%;
+    background-color: #c0c0c0;
+    display: block;
+    margin: 20px 0px 20px 0px;
+}
+
+.ms_container .heading{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 5px 15px 5px 15px;
+}
+
+.ms_container .heading .point{
+    display: flex;
+    width: 33.33%;
+    align-items: center;
+    justify-content: left;
+}
+
+.ms_container .heading .point span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    padding: 2px 12px 2px 12px;
+    background-color: #000000;
+    color: #fc2205;
+    text-align: center;
+}
+
+.ms_container .heading .status{
+    display: flex;
+    width: 33.33%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ms_container .heading .status .emoji{
+    font-size: 25px;
+}
+
+.ms_container .heading .timer{
+    display: flex;
+    width: 33.33%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ms_container .heading .timer span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    padding: 2px 12px 2px 12px;
+    background-color: #000000;
+    color: #fc2205;
+    text-align: center;
+}
+
+.ms_container .mine_table{
+    height: 405px;
+    display: block;
+    margin: 0px 15px 0px 15px;
+    /* border-style: solid;
+    border-width: 3px;
+    border-color: #78787a; */
+}
+
+.ms_container .mine_table .mine{
+    width: calc(100% / 15 - 4px);
+    height: calc(404px / 8);
+    background-color: #c0c0c0;
+    cursor: pointer;
+    border-width: 4px;
+    border-style: solid;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-right-color: #7e7e7e;
+    border-bottom-color: #7e7e7e;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    align-content: center;
+}
+
+.ms_container .mine_table .mine span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: #fc2205;
+    text-align: center;
+}
+
+.game_rules{
+    width: 300px;
+    margin-left: 20px;
+    background-color: #c0c0c0;
+    border-width: 4px;
+    border-style: solid;
+    border-top-color: #ffffffb0;
+    border-left-color: #ffffffb0;
+    border-right-color: #7e7e7e;
+    border-bottom-color: #7e7e7e;
+}
+
+.game_rules .heading{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game_rules .heading span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    padding: 2px 12px 2px 12px;
+    color: #fc2205;
+    text-align: center;
+    letter-spacing: 0.05rem;
+}
+
+.game_rules .rules{
+    list-style-type: disc;
+    padding: 0px 20px 0px 20px;
+    margin: 0px;
+    /* margin: 20px; */
+}
+
+.game_rules .rules li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    margin: 0px 20px 10px 20px;
+    line-height: 1.75rem;
+}
