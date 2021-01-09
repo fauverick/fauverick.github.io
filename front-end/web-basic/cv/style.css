@@ -1,0 +1,56 @@
+.header{
+    margin: 40px 0px 10px 0px;
+}
+
+.header p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    margin: 15px 0px 15px 0px;
+    padding: 0;
+}
+
+.header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 27px;
+    text-align: center;
+    font-weight: bold;
+    margin: 25px 0px 25px 0px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.content_holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.content_holder .content{
+    width: 800px;
+}
+
+.content_holder .content p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    text-align: justify;
+    margin: 10px 0px 10px 0px;
+    padding: 0;   
+    line-height: 2.4rem;
+}
+
+.content_holder .content .signature{
+    width: 50%;
+    float: right;
+}
+
+.content_holder .content .signature p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    padding: 0;   
+    line-height: 2.4rem;
+}
