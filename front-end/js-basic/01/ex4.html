@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+</head>
+
+<script>
+    let n = prompt("Input n:");
+    let arr = [];
+    for(let i = 0; i<n; i++)
+        arr[i] = prompt(`Input arr[${i}]: `);
+
+    let findmod = (a) => {
+        let res = "";
+        for(let i = 0; i<n; i++){
+            a[i] = a[i] % 2;
+            res += (a[i] + " ");
+        }
+        return res;
+    }
+  
+    alert(findmod(arr));
+
+</script>
+
+<body>
+</body>
+</html>
