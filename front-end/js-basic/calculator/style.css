@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Irvin';
+    src:  url('./fonts/Irvin-Heading.woff2') format('woff2');
+    /* font-weight: 400; */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .cal_wrapper{
+    /* min-height: 600px; */
+    width: 480px;
+    background-color: #e8ded2;
+    box-sizing: border-box;
+    padding: 25px 20px 25px 20px;
+}
+
+.container .cal_wrapper .header{
+    display: block;
+}
+
+.container .cal_wrapper .header p{
+    color: #000000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: Irvin;
+    text-align: center;
+    letter-spacing: 0.25px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+
+.container .cal_wrapper .content_display{
+    height: 150px;
+    background-color: #a3d2ca;
+    box-sizing: border-box;
+    padding: 15px 15px 15px 15px;
+}
+
+.container .cal_wrapper .content_display .input{
+    display: block;
+    height: 95px;
+    margin: 0;
+    padding: 0;
+}
+
+.container .cal_wrapper .content_display .input p{
+    color: #000000;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Irvin;
+    text-align: left;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.container .cal_wrapper .content_display .result{
+    display: block;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.container .cal_wrapper .content_display .result p{
+    color: #000000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: Irvin;
+    text-align: right;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.container .cal_wrapper .button_display{
+    display: block;
+    margin-top: 20px;
+}
+
+.pr1 { grid-area: pr1; }
+.pr2 { grid-area: pr2; }
+.del { grid-area: del; }
+.clr { grid-area: clr; }
+.n0 { grid-area: n0; }
+.n1 { grid-area: n1; }
+.n2 { grid-area: n2; }
+.n3 { grid-area: n3; }
+.n4 { grid-area: n4; }
+.n5 { grid-area: n5; }
+.n6 { grid-area: n6; }
+.n7 { grid-area: n7; }
+.n8 { grid-area: n8; }
+.n9 { grid-area: n9; }
+.mod { grid-area: mod; }
+.root { grid-area: root; }
+.time { grid-area: time; }
+.dvd { grid-area: dvd; }
+.plus { grid-area: plus; }
+.minus { grid-area: minus; }
+.point { grid-area: point; }
+.plmn { grid-area: plmn; }
+.equal { grid-area: equal; }
+
+.container .cal_wrapper .button_display .button_container{
+    display: grid;
+    grid-template-areas:
+      'pr1 pr2 del clr clr'
+      'n7 n8 n9 mod root'
+      'n4 n5 n6 time dvd'
+      'n1 n2 n3 plus minus'
+      'point n0 plmn equal equal';
+    grid-gap: 10px;
+    /* padding: 10px; */
+}
+
+.container .cal_wrapper .button_display .button_container .op{
+    background-color: #5eaaa8;
+}
+
+.container .cal_wrapper .button_display .button_container .del{
+    background-color: #5eaaa8;
+}
+
+.container .cal_wrapper .button_display .button_container .lop{
+    background-color: #056676;
+}
+
+.container .cal_wrapper .button_display .button_container .num{
+    background-color: #a3d2ca;
+}
+.container .cal_wrapper .button_display .button_container button{
+    color: #000000;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Irvin;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 20px 0 20px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
