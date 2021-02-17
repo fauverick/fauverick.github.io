@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    padding: 0;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fafbfe;
+}
+
+.list_holder {
+    background: #fff;
+    width: 1000px;
+    height: 400px;
+    /* margin: 100px;
+    padding: 20px; */
+    position: relative;
+  }
+  
+  .list_holder::after {
+    border-radius: 0px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    content: '';
+    display: block;
+    height: inherit;
+    /* height: 350px; */
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+.list_holder .list_title{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #ddd; */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.125);
+}
+
+.list_holder .list_title p{
+    font-family: Alata;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.list_holder .function_box{
+    margin: 25px 40px 20px 40px;
+    padding: 0px 0px 25px 0px;
+    display: flex;
+    flex-flow: row;
+    border-style: solid;
+    border-color: #eee;
+    border-width: 0px 0px 1px 0px;
+}
+
+.list_holder .function_box .add_btn{
+    width: 10%;
+    background-color: #10a5f5;
+    font-family: Alata;
+    font-size: 18px;
+    outline: none;
+    color: #fff;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.list_holder .function_box .searchbox{
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #eee;
+    margin-left: 10%;
+    border-width: 2px;
+}
+
+.list_holder .function_box .searchbox input{
+    margin-left: 20px;
+    width: 87%;
+    height: 90%;
+    border:none;
+    font-family: Alata;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: left;
+    outline:none;
+    background-color: #fff;
+}
+
+.list_holder .function_box .datebox {
+    margin-left: 20px;
+    width: 30%;
+    height: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #eee;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.list_holder .function_box .datebox input{
+    margin-left: 20px;
+    height: 90%;
+    border:none;
+    font-family: Alata;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: left;
+    outline:none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.list_holder .job_list{
+    margin: 0px 40px 40px 40px;
+}
+
+.list_holder .job_list .single_list{
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 20px;
+}
+
+.list_holder .job_list .single_list .checkbox_holder{
+    width: 10%;
+    box-sizing: border-box;
+    padding-left: 5%;
+    display: flex;
+}
+
+.list_holder .job_list .single_list .checkbox{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.list_holder .job_list .ctrl_btn{
+    width: 10%;
+    /* padding: 6px; */
+    display: flex;
+}
+
+.list_holder .job_list .ctrl_btn img{
+    width: 50%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.list_holder .job_list .content{
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #eee;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center;    */
+}
+
+.list_holder .job_list .content p{
+    margin-left: 20px;
+    border:none;
+    font-family: Alata;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.list_holder .job_list .deadline{
+    margin-left: 20px;
+    width: 30%;
+    height: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #eee;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.list_holder .job_list .deadline p{
+    margin-left: 20px;
+    border:none;
+    font-family: Alata;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: left;
+}
