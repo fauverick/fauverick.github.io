@@ -1,0 +1,323 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-content: space-evenly;
+    padding: 20px 40px 20px 40px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #A3A1A1;
+    width: 100%;
+}
+
+.header .logo{
+    width: 16%;
+    display: flex;
+    justify-content: center;
+}
+
+.header .logo img{
+    width: 100%;
+    padding-top: 8px;
+}
+
+.header .icon{
+    width: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.header .icon img{
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-content: space-evenly;  
+    width: 100%;
+    padding: 15px 25% 15px 25%;
+}
+
+.menu .link{
+    font-family: Alata;
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.banner{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: #A3A1A1;
+    border-width: 1px 0px 0px 0px;
+}
+
+.banner .content{
+    font-family: Alata;
+    font-size: 25px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 50px 0px 50px;
+    flex-wrap: wrap;
+}
+
+.product .container{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0px 20px 35px 20px;
+    position: relative;
+}
+
+.product .container .link{
+    font-family: Alata;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    height: 30px;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.product .container img{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.selected{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px 50px 30px 50px;
+    flex-wrap: wrap;
+}
+
+.selected .container{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+}
+
+.selected .container img{
+    width: 100%;
+}
+
+.selected .container p{
+    text-align: center;
+    font-family: Alata;
+    font-size: 14px;
+}
+
+.lookbook{
+    background-color: #000;
+    height: 850px;
+    /* margin-bottom: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lookbook .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    /* position: relative; */
+}
+
+.lookbook .pic1{
+    height: 700px;
+    width: auto;
+}
+
+.lookbook .pic2{
+    height: 570px;
+    margin-top: -200px;
+    width: auto;
+}
+
+.lookbook .pic3{
+    /* height: 540px; */
+    margin-top: 100px;
+    width: 300px;
+}
+
+.lookbook .pic3 img{
+    width: 100%;
+    height: auto;
+}
+
+.lookbook .pic3 button{
+    font-size: 20px;
+    font-family: Alata;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #fff;
+    float: right;
+    background-color: #000;
+    cursor: pointer;
+    margin-top: 60px;
+    width: 300px;
+    height: 40px;
+}
+
+.form_container{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    width: 500px;
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px 0px 40px 0px;
+}
+
+.form .content{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .content .img_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .content .img_container img{
+    width: 30%;
+}
+
+.form .content .join{
+    font-family: Alata;
+    font-size: 16px;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+
+.form .content .fill{
+    box-sizing: border-box;
+    margin: 0% 20% 20px 20%;
+}
+
+.form .content .fill input{
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    outline: none;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0px 0px 1px 0px;
+    padding: 0px 0px 10px 5px;
+}
+
+
+.form .content .reg{
+    font-family: Alata;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin: 0% 18% 0px 20%;
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px;
+    box-sizing: border-box;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+}
+
+.form .content .reg:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.footer{
+    height: 200px;
+    border-style: solid;
+    border-color: #A3A1A1;
+    border-width: 2px 0px 0px 0px;
+    box-sizing: border-box;
+    padding: 30px 50px 20px 50px;
+    display: flex;
+}
+
+.footer .col{
+    width:200px;
+}
+
+.footer .col .link{
+    font-family: Alata;
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    padding-bottom: 20px;
+}
+
+.footer .col .social{
+    display: flex;
+}
+
+.footer .col .social .icon{
+    width: 18px;
+    padding-right: 40px;
+}
+
+.footer .col .social .icon img{
+    width: 100%;
+}
+
+.footer .col2{
+    width:100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.footer .col2 .logo{
+    width: 50px;
+    float: right;
+    padding-left: 30px;
+}
+
+.footer .col2 img{
+    width: 100%;
+    float: right;
+}
+
