@@ -1,0 +1,680 @@
+@font-face {
+    font-family: 'Alata';
+    src:  url('../fonts/Alata-Regular.woff2') format('woff2');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #d32521;
+}
+
+.active{
+    color: #d32521;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-content: space-evenly;
+    padding: 20px 40px 20px 40px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #A3A1A1;
+    width: 100%;
+}
+
+.header .logo{
+    width: 16%;
+    display: flex;
+    justify-content: center;
+}
+
+.header .logo img{
+    width: 100%;
+    padding-top: 8px;
+}
+
+.header .icon{
+    width: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+.header .bar{
+    display: none;
+}
+
+.header .icon img{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-style: none;
+    }
+    .header .icon{
+        width: 0%;
+        display: none;
+        justify-content: center;
+    }
+
+    .header .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .bar{
+        display: block;
+        position: relative;
+        position: absolute;
+        width: 20px;
+        left: 30px;
+    }
+
+    .header .bar img{
+        width: 100%;
+    }
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-content: space-evenly;  
+    width: 100%;
+    padding: 15px 25% 15px 25%;
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+}
+.menu .link{
+    font-family: Alata;
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.banner{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: #A3A1A1;
+    border-width: 1px 0px 0px 0px;
+}
+
+.banner .content{
+    font-family: Alata;
+    font-size: 25px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 50px 0px 50px;
+    flex-wrap: wrap;
+}
+
+.product .container{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0px 20px 35px 20px;
+    position: relative;
+}
+
+.product .container img{
+    transition: 1s;
+}
+
+.product .container:hover img{
+    transition: 1s;
+    filter: brightness(90%);
+}
+
+.product .container .link{
+    font-family: Alata;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    height: 30px;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.product .container img{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px){
+    .product{
+        padding: 0px 20px -20px 20px;
+    }
+
+    .product .container{
+        padding: 0px 10px 35px 10px;
+    }
+    
+    .product .container .link{
+        font-size: 18px;
+        top: 20px;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .product{
+        padding: 0px 20px 0px 20px;
+    }
+
+    .product .container{
+        width: 100%;
+        padding: 0px 20px 35px 20px;
+    }
+    
+    .product .container .link{
+        font-size: 20px;
+        top: 30px;
+        left: 50px;
+    }
+}
+
+
+.selected{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px 50px 30px 50px;
+    flex-wrap: wrap;
+}
+
+.selected .container{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+    position: relative;
+}
+
+.selected .container img{
+    width: 100%;
+}
+
+.selected .container .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+}
+.selected .container:hover .img-top {
+    display: inline;
+}
+
+.selected .container p{
+    text-align: center;
+    font-family: Alata;
+    font-size: 14px;
+    padding: 20px 0px 0px 0px;
+}
+
+.selected .container p .price{
+    display: block;
+    visibility: hidden;
+}
+
+.selected .container:hover p{
+    color: #d32521;
+}
+
+.selected .container:hover p .price{
+    display: block;
+    visibility: inherit;
+    color: #d32521;
+}
+
+@media screen and (max-width: 768px)
+{
+    .selected{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .selected{
+        display: none;
+    }
+}
+
+
+.carousel{
+    height: 100%;
+    display: none;
+}
+
+.carousel .item{
+    box-sizing: border-box;
+    padding: 0% 15% 0% 15%;
+}
+
+.carousel-control.left{
+    background-image: none;
+    background-color: none;
+    text-shadow: none;
+    color: #000;
+}
+
+.carousel-control.right{
+    background-image: none;
+    background-color: none;
+    text-shadow: none;
+    color: #000;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    position: absolute;
+    top: calc(50% - 50px);
+    z-index: 5;
+    display: inline-block;
+}
+
+.glyphicon-chevron-left{
+    color: #000;
+}
+
+.glyphicon-chevron-right{
+    color: #000;
+}
+
+.carousel-caption{
+    color: #000;
+    position: static;
+    padding: 20px 0px 20px 0px;
+    text-shadow: none;
+    font-family: Alata;
+    font-size: 20px;
+    height: 100px;
+}
+
+.carousel-caption .price{
+    display: block;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .carousel{
+        box-sizing: border-box;
+        margin: 0px 0px 0px 0px;
+        height: 100%;
+        display: block;
+    }
+
+    .carousel .container{
+        max-width: 600px;
+    }
+
+    .carousel-caption{
+        font-size: 18px;
+    }
+}
+
+.lookbook{
+    background-color: #000;
+    height: 800px;
+    /* margin-bottom: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lookbook .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    /* position: relative; */
+}
+
+.lookbook .pic1{
+    height: auto;
+    width: 30%;
+}
+
+.lookbook .pic1 img{
+    width: 100%;
+}
+
+.lookbook .pic2{
+    height: auto;
+    margin-top: -70px;
+    width: 25%;
+}
+
+.lookbook .pic2 img{
+    width: 100%;
+}
+
+.lookbook .pic3{
+    /* height: 540px; */
+    margin-top: 100px;
+    width: 20%;
+}
+
+.lookbook .pic3 img{
+    width: 100%;
+    height: auto;
+}
+
+.lookbook .pic3 button{
+    font-size: 20px;
+    font-family: Alata;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #fff;
+    float: right;
+    background-color: #000;
+    cursor: pointer;
+    margin-top: 60px;
+    width: 300px;
+    height: 40px;
+}
+@media screen and (max-width: 1300px) {
+    .lookbook{
+        height: 770px;
+    } 
+}
+
+@media screen and (max-width: 1200px) {
+    .lookbook{
+        height: 750px;
+    } 
+}
+
+@media screen and (max-width: 1100px) {
+    .lookbook{
+        height: 700px;
+    } 
+    .lookbook .pic3 button{
+        font-size: 18px;
+        width: 250px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .lookbook{
+        height: 600px;
+    } 
+    .lookbook .pic3 button{
+        font-size: 18px;
+        width: 250px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .lookbook{
+        height: 550px;
+    } 
+    .lookbook .pic3 button{
+        font-size: 18px;
+        width: 250px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lookbook{
+        /* height: 700px; */
+        height: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .lookbook .container{
+        width: 100%;
+        height: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .lookbook .pic1{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 40px 10% 0% 10%;
+    }
+    
+    .lookbook .pic1 img{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .lookbook .pic2{
+       display: none;
+    }
+    
+    .lookbook .pic3 {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .lookbook .pic3 img{
+        display: none;
+    }
+    
+    .lookbook .pic3 button{
+        font-size: 18px;
+        width: 250px;
+        height: 40px;
+        float: none;
+        margin: 40px 0px 40px 0px;
+    }
+}
+
+
+.form_container{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    max-width: 500px;
+    width: 90%;
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px 0px 40px 0px;
+}
+
+.form .content{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .content .img_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .content .img_container img{
+    width: 30%;
+}
+
+.form .content .join{
+    font-family: Alata;
+    font-size: 16px;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+
+.form .content .fill{
+    box-sizing: border-box;
+    margin: 0% 20% 20px 20%;
+}
+
+.form .content .fill input{
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    outline: none;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0px 0px 1px 0px;
+    padding: 0px 0px 10px 5px;
+}
+
+
+.form .content .reg{
+    font-family: Alata;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin: 0% 18% 0px 20%;
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px;
+    box-sizing: border-box;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+}
+
+.form .content .reg:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    .form{
+        max-width: 400px;
+        width: 85%;
+    }
+
+    .form .content .join{
+        font-size: 14px;
+    }
+
+    .form .content .fill input {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 14px;
+    }
+}
+
+.footer{
+    height: 200px;
+    border-style: solid;
+    border-color: #A3A1A1;
+    border-width: 2px 0px 0px 0px;
+    box-sizing: border-box;
+    padding: 30px 50px 20px 50px;
+    display: flex;
+}
+
+.footer .col{
+    width:200px;
+}
+
+.footer .col .link{
+    font-family: Alata;
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    padding-bottom: 20px;
+}
+
+.footer .col .social{
+    display: flex;
+}
+
+.footer .col .social .icon{
+    width: 18px;
+    box-sizing: border-box;
+    margin-right: 40px;
+    color: #000;
+}
+
+.footer .col .social .icon img{
+    width: 100%;
+}
+
+.footer .col2{
+    width:100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.footer .col2 .logo{
+    width: 50px;
+    float: right;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+.footer .col2 img{
+    width: 100%;
+    float: right;
+}
+
+@media screen and (max-width: 900px){
+    .footer .col{
+        width:280px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .footer{
+        display: block;
+        padding: 30px 30px 20px 30px;
+    }
+
+    .footer .col2 img{
+        width: 100%;
+        float: right;
+        margin-bottom: 20px;
+    }
+    
+}
