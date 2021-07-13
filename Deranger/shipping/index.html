@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipping Information
+    <title>Checkout Information
     </title>
 </head>
 
@@ -13,8 +13,9 @@
 
 <body>
     <div class="container">
-        <div class="info_col">
+        <div class="info_col" id = "info_col">
             <div class="content">
+                <div class = "header">
                 <div class="logo">
                     <a href="../homepage/index.html"> <img src="../img/logo.svg"></a>
                 </div>
@@ -29,6 +30,7 @@
                     </div>
                     <div class="breadcrumb_content" style="font-weight: 500;">Thông tin giao hàng</div>
                 </div>
+            </div>
                 <div class="contact_info">
                     <div class="title">
                         Thông tin liên lạc
@@ -175,70 +177,92 @@
                 </div>
             </div>
         </div>
-        <div class="details_col">
+        <div class="details_col" id = "details_col">
             <div class = "details_container">
-                <div class = "item_list">
-                    <div class = "item_container">
-                        <div class = "item_img">
-                            <img src = "../img/clothes/scenic_pattern/tiny.png">
-                            <span class = "item_quantity">1</span>
-                        </div>
-                        <div class = "item_info">
-                            <div class = "item_id ">
-                                <div class = "item_name">
-                                    <span>Scenic Pattern Shirt</span>
-                                </div>
-                                <div class = "item_size">
-                                    <span>S</span>
-                                </div>
-                            </div>
-                            <div class = "item_price">
-                                <span>500.000 VNĐ</span>
-                            </div>
-                        </div>
+                <div class="content">
+                    <div class = "header">
+                    <div class="logo">
+                        <a href="../homepage/index.html"> <img src="../img/logo.svg"></a>
                     </div>
-                    <div class = "item_container">
-                        <div class = "item_img">
-                            <img src = "../img/clothes/skeleton/tiny.png">
-                            <span class = "item_quantity">1</span>
+                    <div class="breadcrumb">
+                        <div class="breadcrumb_content">
+                            <a href="../cart/index.html">
+                                Giỏ hàng
+                            </a>
                         </div>
-                        <div class = "item_info">
-                            <div class = "item_id ">
-                                <div class = "item_name">
-                                    <span>High N Dry Shirt</span>
-                                </div>
-                                <div class = "item_size">
-                                    <span>M</span>
-                                </div>
-                            </div>
-                            <div class = "item_price">
-                                <span>420.000 VNĐ</span>
-                            </div>
+                        <div class="button">
+                            <img src="../img/right-arrow.svg">
                         </div>
+                        <div class="breadcrumb_content" style="font-weight: 500;">Thông tin giao hàng</div>
                     </div>
                 </div>
-                <div class = "promo_code">
-                    <div class = "fill">
-                        <div class = "title">Mã giảm giá</div>
-                        <input type="text">
+                <div class = "details">
+                    <div class = "item_list">
+                        <div class = "item_container">
+                            <div class = "item_img">
+                                <img src = "../img/clothes/scenic_pattern/tiny.png">
+                                <span class = "item_quantity">1</span>
+                            </div>
+                            <div class = "item_info">
+                                <div class = "item_id ">
+                                    <div class = "item_name">
+                                        <span>Scenic Pattern Shirt</span>
+                                    </div>
+                                    <div class = "item_size">
+                                        <span>S</span>
+                                    </div>
+                                </div>
+                                <div class = "item_price">
+                                    <span>500.000 VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "item_container">
+                            <div class = "item_img">
+                                <img src = "../img/clothes/skeleton/tiny.png">
+                                <span class = "item_quantity">1</span>
+                            </div>
+                            <div class = "item_info">
+                                <div class = "item_id ">
+                                    <div class = "item_name">
+                                        <span>High N Dry Shirt</span>
+                                    </div>
+                                    <div class = "item_size">
+                                        <span>M</span>
+                                    </div>
+                                </div>
+                                <div class = "item_price">
+                                    <span>420.000 VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                   <div class = "button">
-                       <div>Áp dụng</div>
-                   </div> 
-                </div>
-                <div class = "summary">
-                    <div class = "summary_content">
-                        <span style = "color: #000;">Giá trị đơn hàng</span>
-                        <span>920.000 VNĐ</span>
+                    <div class = "promo_code">
+                        <div class = "fill">
+                            <div class = "title">Mã giảm giá</div>
+                            <input type="text">
+                        </div>
+                    <div class = "button">
+                        <div>Áp dụng</div>
+                    </div> 
                     </div>
-                    <div class = "summary_content" style = "padding: 0">
-                        <span style = "color: #000;">Phí vận chuyển	</span>
-                        <span>40.000 VNĐ</span>
+                    <div class = "summary">
+                        <div class = "summary_content">
+                            <span style = "color: #000;">Giá trị đơn hàng</span>
+                            <span>920.000 VNĐ</span>
+                        </div>
+                        <div class = "summary_content" style = "padding: 0">
+                            <span style = "color: #000;">Phí vận chuyển	</span>
+                            <span>40.000 VNĐ</span>
+                        </div>
                     </div>
                 </div>
                <div class = "final">
                 <div class = "final_content">
-                    <span style = "color: #000;">Tổng tiền</span>
+                    <div class = "title">
+                        <span>Tổng tiền</span>
+                        <img src = "../img/down-arrow.svg" id = "show_details">
+                    </div>
                     <span style = "font-size: 23px; font-weight: 500;">960.000 VNĐ</span>
                 </div>
                </div> 
@@ -249,3 +273,4 @@
 </body>
 
 </html>
+<script src = "index.js"></script>

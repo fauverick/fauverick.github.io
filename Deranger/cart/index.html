@@ -11,13 +11,16 @@
 
 <body>
     <div class = "header">
-        <span class = "icon" style = "padding-top: 15px; width: 28px;">
+        <span class = "bar">
+            <img src = "../img/menu.svg">
+        </span>
+        <span class = "icon" style = "padding-top: 15px;">
             <a href = "" style = "cursor: pointer"><img src = "../img/search.svg"></a>
         </span>
         <span class = "logo" style = "width: 229px;">
             <a href = "../homepage/index.html"> <img src = "../img/logo.svg"></a>
         </span>
-        <span class = "icon" style = "padding-top: 15px; width: 28px;">
+        <span class = "icon" style = "padding-top: 15px;">
             <a href = "../cart/index.html" style = "cursor: pointer"><img src = "../img/cart.svg"></a>
         </span>
     </div>
@@ -26,7 +29,7 @@
             <a href = "../men/index.html">SHOP MEN</a>
         </span>
         <span class = "link">
-            <a href = "../men/index.html">SHOP WOMEN</a>
+            <a href = "">SHOP WOMEN</a>
         </span>
         <span class = "link">
             <a href = "../lookbook/index.html">LOOKBOOK</a>
@@ -35,7 +38,6 @@
             <a href = "">ABOUT DERANGER</a>
         </span>
     </div>
-
     <div class = "cart">
         <div class = "details">
             <div class = "title">
@@ -47,54 +49,54 @@
             </div>
             <div class = "line"></div>
             <div class = "item_info">
-                <div class = "item">
-                    <div class = "item_img">
-                        <img src = "../img/clothes/skeleton/skeleton front.png">
-                    </div>
-                    <div class = "item_name">
-                        <div class = "name" style = "padding-bottom: 10px;">
-                            ÁO THUN HIGH N DRY
+                    <div class = "item">
+                        <div class = "item_img">
+                            <img src = "../img/clothes/skeleton/skeleton front.png">
                         </div>
-                        <div class = "color">
-                            MÀU: TRẮNG
+                        <div class = "item_name">
+                            <div class = "name" style = "padding-bottom: 10px;">
+                                ÁO THUN HIGH N DRY
+                            </div>
+                            <div class = "color">
+                                MÀU: TRẮNG
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class = "size">
-                    <div class = "item_size">
-                        M
+                    <div class = "size">
+                        <div class = "item_size">
+                            M
+                        </div>
+                        <div class = "drop_down">
+                            <div class = "button">
+                                <img src = "../img/down-arrow.svg">
+                            </div>
+                        </div>
                     </div>
-                    <div class = "drop_down">
+                    <div class = "quantity">
+                        <div class = "number">
+                            2
+                        </div>
+                        <div class = "ctrl">
+                            <div class = "button" id = "plus">
+                                <img src = "../img/plus.svg">
+                            </div>
+                            <div class = "button" id = "minus">
+                                <img src = "../img/minus.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "single_price">
+                        420.000 VNĐ
+                    </div>
+                    <div class = "total_price">
+                        840.000 VNĐ
+                    </div>
+                    <div class = "delete">
                         <div class = "button">
-                            <img src = "../img/down-arrow.svg">
+                            <img src = "../img/delete.svg">
                         </div>
                     </div>
                 </div>
-                <div class = "quantity">
-                    <div class = "number">
-                        2
-                    </div>
-                    <div class = "ctrl">
-                        <div class = "button" id = "plus">
-                            <img src = "../img/plus.svg">
-                        </div>
-                        <div class = "button" id = "minus">
-                            <img src = "../img/minus.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class = "single_price">
-                    420.000 VNĐ
-                </div>
-                <div class = "total_price">
-                    840.000 VNĐ
-                </div>
-                <div class = "delete">
-                    <div class = "button">
-                        <img src = "../img/delete.svg">
-                    </div>
-                </div>
-            </div>
             <div class = "line"></div>
             <div class = "item_info">
                 <div class = "item">
@@ -147,28 +149,6 @@
             </div>
         </div>
         <div class = "summary">
-            <!-- <div class = "title">
-                THÔNG TIN ĐƠN HÀNG
-            </div>
-            <div class = "info">
-                <div class = "total_value">
-                    <span>GIÁ TRỊ ĐƠN HÀNG :</span>
-                    <span id = "price">840.000 VNĐ</span>
-                </div>
-                <div class = "discount_code">
-                    <span class = "code" id = "code">                    
-                        <input type="text" placeholder="Mã giảm giá...">
-                    </span>
-                    <span class = "apply" id = "apply">
-                        SỬ DỤNG
-                    </span>
-                </div>
-                <div class = "discount_amount">
-                    <span>KHUYẾN MÃI :</span>
-                    <span id = "amount">0 VNĐ</span>
-                </div>
-            </div>
-            <div class = "line"></div> -->
             <div class = "sum_info">
                 <span>TẠM TÍNH :</span>
                 <span id = "final_price">840.000 VNĐ</span>
@@ -182,7 +162,7 @@
     <div class = "footer">
         <div class = "col">
             <a href = "../men/index.html"><div class = "link"> SHOP MEN</div></a>
-            <a href = "../men/index.html"><div class = "link"> SHOP WOMEN</div></a>
+            <a href = ""><div class = "link"> SHOP WOMEN</div></a>
             <a href = "../lookbook/index.html"><div class = "link"> LOOKBOOK</div></a>
             <a href = ""><div class = "link"> ABOUT DERANGER</div></a>
         </div>
