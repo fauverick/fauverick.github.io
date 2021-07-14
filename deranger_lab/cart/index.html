@@ -11,7 +11,7 @@
 
 <body>
     <div class = "header">
-        <span class = "bar">
+        <span class = "bar" id = "bar">
             <img src = "../img/menu.svg">
         </span>
         <span class = "icon" style = "padding-top: 15px;">
@@ -24,27 +24,52 @@
             <a href = "../cart/index.html" style = "cursor: pointer"><img src = "../img/cart.svg"></a>
         </span>
     </div>
+
+    <div class = "nav-bar" id = "nav-bar"> 
+        <div class = "logo">
+            <img src = "../img/logo.svg">
+        </div>
+        <div class = "close" id = "close-bar">
+            <img src = "../img/delete.svg">
+        </div>
+        <div class = "link_list" id = "link-list">
+            <a class = "" href = "../men/index.html">SHOP MEN</a>
+            <a class = "" href = "../men/index.html">SHOP WOMEN</a>
+            <a class = "" href = "../lookbook/index.html">SHOP LOOKBOOK</a>
+            <a href = "">ABOUT DERANGER</a>
+            <div class = "icon">
+                <a class = "" href = "">
+                    <img src = "../img/search.svg">
+                </a>
+                <a class = "" href = "../cart/index.html">
+                    <img src = "../img/cart.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class = "menu">
         <span class = "link">
-            <a href = "../men/index.html">SHOP MEN</a>
+            <a class = "" href = "../men/index.html">SHOP MEN</a>
         </span>
         <span class = "link">
-            <a href = "">SHOP WOMEN</a>
+            <a class = "" href = "../men/index.html">SHOP WOMEN</a>
         </span>
         <span class = "link">
-            <a href = "../lookbook/index.html">LOOKBOOK</a>
+            <a class = "" href = "../lookbook/index.html">LOOKBOOK</a>
         </span>
         <span class = "link">
             <a href = "">ABOUT DERANGER</a>
         </span>
     </div>
+
+    <script src = "../js/nav-bar.js"></script>
     <div class = "cart">
         <div class = "details">
             <div class = "title">
                 <div class = "title_content" style = "width: 32%; padding-left: 5px"> ITEM </div>
-                <div class = "title_content" style = "width: 15%"> SIZE </div>
-                <div class = "title_content" style = "width: 15%"> SỐ LƯỢNG </div>
-                <div class = "title_content" style = "width: 15%"> ĐƠN GIÁ </div>
+                <div class = "title_content" style = "width: 22%" id = "quantity"> SỐ LƯỢNG </div>
+                <div class = "title_content" style = "width: 23%"> ĐƠN GIÁ </div>
                 <div class = "title_content" style = "width: 23%"> TỔNG </div>
             </div>
             <div class = "line"></div>
@@ -54,35 +79,20 @@
                             <img src = "../img/clothes/skeleton/skeleton front.png">
                         </div>
                         <div class = "item_name">
-                            <div class = "name" style = "padding-bottom: 10px;">
+                            <div class = "name">
                                 ÁO THUN HIGH N DRY
                             </div>
                             <div class = "color">
-                                MÀU: TRẮNG
+                                TRẮNG
                             </div>
-                        </div>
-                    </div>
-                    <div class = "size">
-                        <div class = "item_size">
-                            M
-                        </div>
-                        <div class = "drop_down">
-                            <div class = "button">
-                                <img src = "../img/down-arrow.svg">
+                            <div class = "size">
+                                M
                             </div>
                         </div>
                     </div>
                     <div class = "quantity">
-                        <div class = "number">
-                            2
-                        </div>
-                        <div class = "ctrl">
-                            <div class = "button" id = "plus">
-                                <img src = "../img/plus.svg">
-                            </div>
-                            <div class = "button" id = "minus">
-                                <img src = "../img/minus.svg">
-                            </div>
+                        <div class="input_block">
+                            <input type="text" value = "2">
                         </div>
                     </div>
                     <div class = "single_price">
@@ -96,56 +106,41 @@
                             <img src = "../img/delete.svg">
                         </div>
                     </div>
-                </div>
+            </div>
             <div class = "line"></div>
             <div class = "item_info">
-                <div class = "item">
-                    <div class = "item_img">
-                        <img src = "../img/clothes/skeleton/skeleton front.png">
-                    </div>
-                    <div class = "item_name">
-                        <div class = "name" style = "padding-bottom: 10px;">
-                            ÁO THUN HIGH N DRY
+                    <div class = "item">
+                        <div class = "item_img">
+                            <img src = "../img/clothes/skeleton/skeleton front.png">
                         </div>
-                        <div class = "color">
-                            MÀU: TRẮNG
+                        <div class = "item_name">
+                            <div class = "name">
+                                ÁO THUN HIGH N DRY
+                            </div>
+                            <div class = "color">
+                                TRẮNG
+                            </div>
+                            <div class = "size">
+                                M
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class = "size">
-                    <div class = "item_size">
-                        M
+                    <div class = "quantity">
+                        <div class="input_block">
+                            <input type="text" value = "2">
+                        </div>
                     </div>
-                    <div class = "drop_down">
+                    <div class = "single_price">
+                        420.000 VNĐ
+                    </div>
+                    <div class = "total_price">
+                        840.000 VNĐ
+                    </div>
+                    <div class = "delete">
                         <div class = "button">
-                            <img src = "../img/down-arrow.svg">
+                            <img src = "../img/delete.svg">
                         </div>
                     </div>
-                </div>
-                <div class = "quantity">
-                    <div class = "number">
-                        2
-                    </div>
-                    <div class = "ctrl">
-                        <div class = "button" id = "plus">
-                            <img src = "../img/plus.svg">
-                        </div>
-                        <div class = "button" id = "minus">
-                            <img src = "../img/minus.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class = "single_price">
-                    420.000 VNĐ
-                </div>
-                <div class = "total_price">
-                    840.000 VNĐ
-                </div>
-                <div class = "delete">
-                    <div class = "button">
-                        <img src = "../img/delete.svg">
-                    </div>
-                </div>
             </div>
         </div>
         <div class = "summary">

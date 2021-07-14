@@ -15,6 +15,11 @@ a{
 
 a:hover{
     text-decoration: none;
+    color: #d32521;
+}
+
+.active{
+    color: #d32521;
 }
 
 .header{
@@ -73,14 +78,21 @@ a:hover{
 
     .header .bar{
         display: block;
-        position: relative;
         position: absolute;
+        z-index: 99;
         width: 20px;
         left: 30px;
+        cursor: pointer;
     }
 
     .header .bar img{
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header .bar{
+        display: none;
     }
 }
 
@@ -110,6 +122,79 @@ a:hover{
     letter-spacing: 0.05rem;
 }
 
+.nav-bar{
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    background-color: #eee;
+    top: 0;
+    left: 0px;
+    width: 0px;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.nav-bar .logo{
+    position: absolute;
+    width: 100px;
+    left: 30px;
+    top: 30px;
+}
+
+.nav-bar .logo img{
+    width: 100%;
+}
+
+.nav-bar .close{
+    position: absolute;
+    width: 13px;
+    right: 30px;
+    top: 32px;
+    cursor: pointer;
+}
+
+.nav-bar .close img{
+    width: 100%;
+}
+
+.nav-bar .link_list{
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    cursor: pointer;
+}
+
+.nav-bar .link_list a{
+    font-family: Alata;
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    display: block;
+    box-sizing: border-box;
+    padding: 0px 0px 10px 0px;
+    transition: 0.1s;
+}
+
+.nav-bar .link_list .icon{
+    padding: 20px 0px 0px 0px;
+}
+.nav-bar .link_list a img{
+    width: 18px;
+    box-sizing: border-box;
+    padding: 0px 0px 05px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-bar{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-bar{
+        display: block;
+    }
+}
 
 .banner{
     height: 100px;
@@ -134,7 +219,11 @@ a:hover{
 
 .select{
     box-sizing: border-box;
-    padding: 10px 50px 30px 50px;
+    padding: 10px 0px 30px 0px;
+    margin: 0px 50px 0px 50px;
+    border-style: solid;
+    border-color: #A3A1A1;
+    border-width: 1px 0px 0px 0px;
 }
 
 .select .title{
@@ -253,8 +342,22 @@ a:hover{
 
 @media screen and (max-width: 768px){
     .select{
-        padding: 10px 30px 30px 30px;
+        padding: 10px 0px 30px 0px;
+        margin: 0px 30px 0px 30px;
     }    
+    .select .title .category{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .select{
+        padding: 10px 0px 30px 0px;
+        margin: 0px 20px 0px 20px;
+    }    
+    .select .title .category{
+        margin-right: 20px;
+    }
 }
 
 
@@ -278,12 +381,32 @@ a:hover{
     width: 100%;
 }
 
+.product .container .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+.product .container:hover .img-top {
+    display: inline;
+}
+
 .product .container .info{
     font-family: Alata;
-    font-size: 18px;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 10px;
+    padding-top: 20px;
+}
+
+.product .container .info .price{
+
 }
 
 @media screen and (max-width: 768px){
@@ -303,6 +426,17 @@ a:hover{
         width: 50%;
         padding: 0px 10px 35px 10px;
     }    
+}
+
+@media screen and (max-width: 640px)
+{
+    .product {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .product .container .info{
+        font-size: 12px;
+    }
 }
 
 .footer{

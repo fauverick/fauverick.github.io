@@ -11,7 +11,7 @@
 
 <body>
     <div class = "header">
-        <span class = "bar">
+        <span class = "bar" id = "bar">
             <img src = "../img/menu.svg">
         </span>
         <span class = "icon" style = "padding-top: 15px;">
@@ -24,62 +24,66 @@
             <a href = "../cart/index.html" style = "cursor: pointer"><img src = "../img/cart.svg"></a>
         </span>
     </div>
+
+    <div class = "nav-bar" id = "nav-bar"> 
+        <div class = "logo">
+            <img src = "../img/logo.svg">
+        </div>
+        <div class = "close" id = "close-bar">
+            <img src = "../img/delete.svg">
+        </div>
+        <div class = "link_list" id = "link-list">
+            <a class = "" href = "../men/index.html">SHOP MEN</a>
+            <a class = "" href = "../men/index.html">SHOP WOMEN</a>
+            <a class = "active" href = "../lookbook/index.html">LOOKBOOK</a>
+            <a href = "">ABOUT DERANGER</a>
+            <div class = "icon">
+                <a class = "" href = "">
+                    <img src = "../img/search.svg">
+                </a>
+                <a class = "" href = "../cart/index.html">
+                    <img src = "../img/cart.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class = "menu">
         <span class = "link">
-            <a href = "../men/index.html">SHOP MEN</a>
+            <a class = "" href = "../men/index.html">SHOP MEN</a>
         </span>
         <span class = "link">
-            <a href = "">SHOP WOMEN</a>
+            <a class = "" href = "../men/index.html">SHOP WOMEN</a>
         </span>
         <span class = "link">
-            <a href = "../lookbook/index.html">LOOKBOOK</a>
+            <a class = "active" href = "../lookbook/index.html">LOOKBOOK</a>
         </span>
         <span class = "link">
             <a href = "">ABOUT DERANGER</a>
         </span>
     </div>
 
-    <div class = "product">
+    <script src = "../js/nav-bar.js"></script>
+
+    <div class = "lookbook">
         <div class = "img_container">
-            <div class = "img">
-                <img src = "../img/clothes/scenic_pattern/front.png">
-            </div>
-            <div class = "img">
-                <img src = "../img/clothes/scenic_pattern/back.png">
-            </div>
-            <div class = "img">
-                <img src = "../img/clothes/scenic_pattern/details.png">
-            </div>
-            <div class = "img">
-                <img src = "../img/clothes/scenic_pattern/front.png">
-            </div>
+            <img src = "../img/lookbook/1.jpg">
         </div>
-        <div class = "info_container">
-            <div class = "product_name">Áo Sơ Mi Scenic</div>
-            <div class = "product_price">500.000 VNĐ</div>
-            <div class = "color">Màu sắc: Trắng</div>
-            <div class = "color_list">
-                <button class = "code" style = "background-color: #eeeeee;"></button>
-                <button class = "code" style = "background-color: #000;"></button>
-            </div>
-            <div class = "size">Size</div>
-            <div class = "size_list">
-                <span class = "code">M</span>
-                <span class = "code">L</span>
-            </div>
-            <div class = "size_guide"> BẢNG SIZE</div>
-
-            <div class = "add_cart"> THÊM VÀO GIỎ HÀNG</div>
-
-            <div class = "buy_now"> MUA NGAY</div>
-
+        <div class = "img_container">
+            <img src = "../img/lookbook/2.jpg">
+        </div>
+        <div class = "img_container">
+            <img src = "../img/lookbook/3.jpg">
+        </div>
+        <div class = "img_container">
+            <img src = "../img/lookbook/4.jpg">
         </div>
     </div>
 
     <div class = "footer">
         <div class = "col">
             <a href = "../men/index.html"><div class = "link"> SHOP MEN</div></a>
-            <a href = ""><div class = "link"> SHOP WOMEN</div></a>
+            <a href = "../men/index.html"><div class = "link"> SHOP WOMEN</div></a>
             <a href = "../lookbook/index.html"><div class = "link"> LOOKBOOK</div></a>
             <a href = ""><div class = "link"> ABOUT DERANGER</div></a>
         </div>

@@ -11,7 +11,7 @@
 
 <body>
     <div class = "header">
-        <span class = "bar">
+        <span class = "bar" id = "bar">
             <img src = "../img/menu.svg">
         </span>
         <span class = "icon" style = "padding-top: 15px;">
@@ -24,22 +24,48 @@
             <a href = "../cart/index.html" style = "cursor: pointer"><img src = "../img/cart.svg"></a>
         </span>
     </div>
+
+    <div class = "nav-bar" id = "nav-bar"> 
+        <div class = "logo">
+            <img src = "../img/logo.svg">
+        </div>
+        <div class = "close" id = "close-bar">
+            <img src = "../img/delete.svg">
+        </div>
+        <div class = "link_list" id = "link-list">
+            <a class = "active" href = "../men/index.html">SHOP MEN</a>
+            <a class = "" href = "../men/index.html">SHOP WOMEN</a>
+            <a class = "" href = "../lookbook/index.html">SHOP LOOKBOOK</a>
+            <a href = "">ABOUT DERANGER</a>
+            <div class = "icon">
+                <a class = "" href = "">
+                    <img src = "../img/search.svg">
+                </a>
+                <a class = "" href = "../cart/index.html">
+                    <img src = "../img/cart.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class = "menu">
         <span class = "link">
-            <a href = "../men/index.html">SHOP MEN</a>
+            <a class = "" href = "../men/index.html">SHOP MEN</a>
         </span>
         <span class = "link">
-            <a href = "">SHOP WOMEN</a>
+            <a class = "" href = "../men/index.html">SHOP WOMEN</a>
         </span>
         <span class = "link">
-            <a href = "../lookbook/index.html">LOOKBOOK</a>
+            <a class = "" href = "../lookbook/index.html">LOOKBOOK</a>
         </span>
         <span class = "link">
             <a href = "">ABOUT DERANGER</a>
         </span>
     </div>
+
+    <script src = "../js/nav-bar.js"></script>
     <div class = "banner">
-        <div class = "content">ÁO SƠ MI</div>
+        <div class = "content">ÁO THUN & POLO</div>
     </div>
 
     <div class = "select">
@@ -100,7 +126,28 @@
     <div class = "product">
         <div class = "container">
             <a href = "../scenic_pattern_shirt/index.html"> 
-                <img src = "../img/clothes/scenic_pattern/front.png">
+                <img src = "../img/clothes/leopard/hibiscus crop.png">
+                <img src = "../img/clothes/leopard/front.jpg" class="img-top" alt="Card Front">
+                <div class = "info">
+                    <span id = "name">áo thun leopard <br></span>
+                    <span id = "price">500.000 VNĐ</Span>
+                </div>
+            </a>
+        </div>
+        <div class = "container">
+            <a href = "../scenic_pattern_shirt/index.html"> 
+                <img src = "../img/clothes/skeleton/skeleton front.png">
+                <img src = "../img/clothes/skeleton/front.png" class="img-top" alt="Card Front">
+                <div class = "info">
+                    <span id = "name">áo sơ mi navy hibiscus<br></span>
+                    <span id = "price">500.000 VNĐ</Span>
+                </div>
+            </a>
+        </div>
+        <div class = "container">
+            <a href = "../scenic_pattern_shirt/index.html"> 
+                <img src = "../img/clothes/black_rock/front.png">
+                <img src = "../img/clothes/black_rock/2.png" class="img-top" alt="Card Front">
                 <div class = "info">
                     <span id = "name">áo SƠ MI scenic <br></span>
                     <span id = "price">500.000 VNĐ</Span>
@@ -108,15 +155,15 @@
             </a>
         </div>
         <div class = "container">
-            <a href = ""> 
-                <img src = "../img/clothes/florals/shirt.png">
+            <a href = "../scenic_pattern_shirt/index.html"> 
+                <img src = "../img/clothes/leopard/hibiscus crop.png">
+                <img src = "../img/clothes/leopard/front.jpg" class="img-top" alt="Card Front">
                 <div class = "info">
-                    <span id = "name">áo sơ mi navy hibiscus<br></span>
+                    <span id = "name">áo thun leopard <br></span>
                     <span id = "price">500.000 VNĐ</Span>
                 </div>
             </a>
         </div>
-       
     </div>
 
     <div class = "footer">
@@ -140,5 +187,7 @@
             <div class = "logo"><img src = "../img/visa.svg"></div>
         </div>
     </div>
+
+    <script src = "index.js"></script>
 </body>
 </html>

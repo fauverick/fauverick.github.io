@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Alata';
-    src:  url('/fonts/Alata-Regular.woff2') format('woff2');
+    src:  url('../fonts/Alata-Regular.woff2') format('woff2');
 }
 
 body{
@@ -15,6 +15,11 @@ a{
 
 a:hover{
     text-decoration: none;
+    color: #d32521;
+}
+
+.active{
+    color: #d32521;
 }
 
 .header{
@@ -73,14 +78,21 @@ a:hover{
 
     .header .bar{
         display: block;
-        position: relative;
         position: absolute;
+        z-index: 99;
         width: 20px;
         left: 30px;
+        cursor: pointer;
     }
 
     .header .bar img{
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header .bar{
+        display: none;
     }
 }
 
@@ -108,6 +120,80 @@ a:hover{
     color: #000;
     font-weight: 400;
     letter-spacing: 0.05rem;
+}
+
+.nav-bar{
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    background-color: #eee;
+    top: 0;
+    left: 0px;
+    width: 0px;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.nav-bar .logo{
+    position: absolute;
+    width: 100px;
+    left: 30px;
+    top: 30px;
+}
+
+.nav-bar .logo img{
+    width: 100%;
+}
+
+.nav-bar .close{
+    position: absolute;
+    width: 13px;
+    right: 30px;
+    top: 32px;
+    cursor: pointer;
+}
+
+.nav-bar .close img{
+    width: 100%;
+}
+
+.nav-bar .link_list{
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    cursor: pointer;
+}
+
+.nav-bar .link_list a{
+    font-family: Alata;
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    display: block;
+    box-sizing: border-box;
+    padding: 0px 0px 10px 0px;
+    transition: 0.1s;
+}
+
+.nav-bar .link_list .icon{
+    padding: 20px 0px 0px 0px;
+}
+.nav-bar .link_list a img{
+    width: 18px;
+    box-sizing: border-box;
+    padding: 0px 0px 05px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-bar{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-bar{
+        display: block;
+    }
 }
 
 .cart{
@@ -145,6 +231,8 @@ a:hover{
 
 .cart .details .item_info{
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .cart .details .item_info .item{
@@ -153,7 +241,7 @@ a:hover{
 }
 
 .cart .details .item_info .item .item_img{
-    width: 30%;
+    width: 40%;
 }
 
 .cart .details .item_info .item .item_img img{
@@ -167,81 +255,55 @@ a:hover{
     font-size: 14px;
     letter-spacing: 0.05rem;
 }
+
+.cart .details .item_info .item .item_name > div{
+    padding-bottom: 10px;
+}
+
 .cart .summary{
     width: 30%;
 }
 
 
-.cart .details .item_info .size{
-    display: flex;
-    width: 15%;
-}
-
-.cart .details .item_info .size .item_size{
-    font-size: 14px;
-    font-family: Alata;
-    width: 30%;
-}
-
-.cart .details .item_info .size .drop_down{
-    width: 70%;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-}
-
-.cart .details .item_info .size .drop_down .button{
-    width: 13px;
-    cursor: pointer;
-}
-
-.cart .details .item_info .size .drop_down img{
-    width: 100%;
-}
-
 .cart .details .item_info .quantity{
     display: flex;
-    width: 15%;
+    width: 22%;
 }
 
-.cart .details .item_info .quantity .number{
-    font-size: 14px;
-    font-family: Alata;
-    width: 30%;
-}
-
-.cart .details .item_info .quantity .ctrl{
-    width: 70%;
+.cart .details .item_info .quantity .input_block{
     display: flex;
 }
 
-.cart .details .item_info .quantity .ctrl .button{
-    width: 13px;
-    cursor: pointer;
-    margin: 0px 5px 0px 5px;
+.cart .details .item_info .quantity .input_block input{
+    width: 100px;
+    font-family: Alata;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+    border-style: solid;
+    border-color: #A3A1A1;
+    border-width: 1px;
     box-sizing: border-box;
-}
-
-.cart .details .item_info .quantity .ctrl .button img{
-    width: 100%;
+    padding: 10px;
+    height: 30px;
+    text-align: center;
 }
 
 .cart .details .item_info .single_price{
-    width: 15%;
+    width: 23%;
     font-family: Alata;
     font-size: 14px;
     letter-spacing: 0.05rem;
 }
 
 .cart .details .item_info .total_price{
-    width: 15%;
+    width: 19%;
     font-family: Alata;
     font-size: 14px;
     letter-spacing: 0.05rem;
 }
 
 .cart .details .item_info .delete{
-    width: 8%;
+    width: 4%;
 }
 
 .cart .details .item_info .delete .button{
@@ -255,6 +317,60 @@ a:hover{
 .cart .details .item_info .delete .button img{
     width: 100%;
 }
+
+@media screen and (max-width: 1024px) {
+    .cart .details .item_info .item_img{
+        max-width: 100px;
+    }
+    .cart .details .item_info .item .item_name{
+        padding: 0px 50px 0px 10px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .cart .details .title  #quantity{ 
+        visibility: inherit;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cart .details .item_info .delete{
+        width: 4%;
+        position: absolute;
+        top: 0%;
+        left: 96%;
+    }
+
+    .cart .details .item_info .single_price{
+        position: absolute;
+        left: 54%;
+        top: 0%;
+    }
+
+    .cart .details .item_info .total_price{
+        position: absolute;
+        left: 77%;
+        top: 0%;
+    }
+
+    .cart .details .title  #quantity{
+        visibility: hidden;
+    }
+    .cart .details .item_info .item_img{
+        max-width: 100px;
+    }
+    .cart .details .item_info .item{
+        width: 100%;
+        padding: 0px 0px 10px 0px;
+    }
+    .cart .details .item_info .quantity {
+        display: flex;
+        width: 54%;
+    }
+}
+
+
 
 .cart .summary{
     width: 27%;
@@ -369,6 +485,11 @@ a:hover{
     margin: 10px;
     color: #fff;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.cart .summary .procede:hover{
+    background-color: #d32521;
 }
 
 @media screen and (max-width: 1400px){
@@ -398,7 +519,7 @@ a:hover{
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
     .cart {
         box-sizing: border-box;
         padding: 50px 30px 50px 30px;
@@ -421,6 +542,12 @@ a:hover{
 
     .cart .summary .sum_info{
         font-size: 16px;
+        padding: 10px calc(23% - 114px) 10px 10px;
+    }
+
+    .cart .summary .sum_info #final_price{
+        font-weight: 800;
+        /* color: #d32521; */
     }
 
     .cart .summary .procede{
@@ -429,65 +556,33 @@ a:hover{
 }
 
 @media screen and (max-width: 640px){
-    /* .cart .details .item_info{
-        display: block;
-    }
-
-    .cart .details .item_info .item{
-        width: 100%;
-        box-sizing: border-box;
-        margin: 0px 0px 250px 0px;
-    }
-
-    .cart .details .item_info .size{
-        width: calc(70% - 20px);
-        box-sizing: border-box;
-        margin: -250px 0px 10px calc(30% + 20px);
-    }
-
-    .cart .details .item_info .quantity{
-        width: calc(70% - 20px);
-        box-sizing: border-box;
-        margin: 0px 0px 10px calc(30% + 20px);
-    }
-
-    .cart .details .item_info .single_price{
-        width: calc(70% - 20px);
-        box-sizing: border-box;
-        margin: 0px 0px 10px calc(30% + 20px);    }
-
-    .cart .details .item_info .total_price {
-        width: calc(70% - 20px);
-        box-sizing: border-box;
-        margin: 0px 0px 10px calc(30% + 20px);
-    }
-
-    .cart {
-        box-sizing: border-box;
-        padding: 50px 30px 50px 30px;
-        display: block;
-    } */
-
     .cart .details {
         width: 100%;
         box-sizing: border-box;
-        padding: 20px 0px 20px 0px;
+        padding: 0px 0px 20px 0px;
     }
 
-    .cart .summary{
-        width: 100%;
-        padding: 20px 0px 20px 0px;
-        border-style: solid;
-        border-color: #A3A1A1;
-        border-width: 1px 0px 0px 0px;
+    .cart .details .title {
+        display: none;
+    }
+    .cart .details .item_info .delete{
+        top: 0%;
+        left: 96%;
     }
 
-    .cart .summary .sum_info{
-        font-size: 16px;
+    .cart .details .item_info .quantity {
+        display: flex;
+        width: calc(100% - 115px);
     }
-
-    .cart .summary .procede{
-        font-size: 16px;
+    .cart .details .item_info .single_price {
+        display: none;
+    }
+    .cart .details .item_info .total_price {
+        width: 115px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position:static;
     }
 }
 
