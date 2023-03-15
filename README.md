@@ -1,3 +1,3 @@
 # fauverick.github.io
 
-money is the anthem of success 
+i think we could do it if we tried
